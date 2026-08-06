@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="La historia y el compromiso ambiental de Olas de Chile Ecocamp." />
+    <meta name="theme-color" content="#2d4a3e" />
+    <title>Conócenos — Olas de Chile Ecocamp</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/logo-web.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body data-page="about" data-meta="about_meta">
+    <a class="skip-link" href="#main" data-i18n="skip">Ir al contenido</a>
+    <div id="siteHeader"></div>
+
+    <main id="main">
+      <div id="pageHero"></div>
+
+      <!-- HISTOIRE -->
+      <section class="section">
+        <div class="wrap story-grid">
+          <div class="reveal">
+            <h2 class="title" data-i18n="about_story_title"></h2>
+            <p class="body" data-i18n="about_story_p1"></p>
+            <p class="body" data-i18n="about_story_p2"></p>
+            <p class="body" data-i18n="about_story_p3"></p>
+          </div>
+          <figure class="story-img reveal d2">
+            <img src="https://images.pexels.com/photos/8960427/pexels-photo-8960427.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- MISSION / VISION / VALEURS -->
+      <section class="section alt">
+        <div class="wrap">
+          <header class="section-head center reveal">
+            <p class="eyebrow" data-i18n="about_mission_eyebrow"></p>
+          </header>
+          <div class="mv-grid">
+            <article class="mv-card reveal d1">
+              <h3 data-i18n="about_mission_title"></h3>
+              <p data-i18n="about_mission_text"></p>
+            </article>
+            <article class="mv-card reveal d2">
+              <h3 data-i18n="about_vision_title"></h3>
+              <p data-i18n="about_vision_text"></p>
+            </article>
+            <article class="mv-card reveal d3">
+              <h3 data-i18n="about_values_title"></h3>
+              <p data-i18n="about_values_text"></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOSTENIBILIDAD -->
+      <section class="section eco-section">
+        <div class="wrap">
+          <header class="section-head center reveal">
+            <p class="eyebrow" data-i18n="about_eco_eyebrow"></p>
+            <h2 class="title"><span data-i18n="about_eco_title_1"></span> <em data-i18n="about_eco_title_2"></em></h2>
+            <p class="lead" data-i18n="about_eco_lead"></p>
+          </header>
+          <div class="eco-grid" id="ecoGrid"></div>
+        </div>
+      </section>
+
+      <!-- LES VAGUES -->
+      <section class="section alt">
+        <div class="wrap">
+          <header class="section-head center reveal">
+            <p class="eyebrow" data-i18n="about_map_eyebrow"></p>
+            <h2 class="title"><span data-i18n="about_map_title_1"></span> <em data-i18n="about_map_title_2"></em></h2>
+            <p class="lead" data-i18n="about_map_lead"></p>
+          </header>
+          <ul class="wave-list reveal d2" id="waveList"></ul>
+        </div>
+      </section>
+
+      <div id="contactMount"></div>
+    </main>
+
+    <div id="siteFooter"></div>
+
+    <script src="translations.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
