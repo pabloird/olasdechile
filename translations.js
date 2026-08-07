@@ -25,8 +25,8 @@ window.TRANSLATIONS = {
 
     /* ---------- Home · Hero ---------- */
     hero_eyebrow: "Ecocamp · Punta de Lobos, Pichilemu",
-    hero_title_1: "Días de desconexión",
-    hero_title_2: "en Pichilemu",
+    hero_title_1: "Regálate días de",
+    hero_title_2: "desconexión en Pichilemu",
     hero_subtitle:
       "A minutos de la playa Punta de Lobos encontrarás Olas de Chile Ecocamp, un lugar ideal para días de relajo y descanso. Dormirás al sonido de las olas y verás todas las estrellas en una noche despejada.",
     hero_cta_primary: "Ver los 16 sitios",
@@ -86,19 +86,17 @@ window.TRANSLATIONS = {
     cat2_price: "$14.000",
     cat2_count: "3 sitios",
 
-    cat3_name: "Casas rodantes y carpas",
+    cat3_name: "Vehículos recreacionales y carpas",
     cat3_short: "Motorhome",
     cat3_desc:
-      "Sitios amplios con estacionamiento en el mismo sitio y enchufe, pensados para casas rodantes, campers y carpas grandes.",
+      "Sitios amplios con estacionamiento en el mismo sitio y enchufe, pensados para casas rodantes, campers y carpas grandes. Tu vehículo al lado de tu carpa.",
     cat3_price: "$10.000",
     cat3_count: "4 sitios",
 
-    cat4_name: "Bosque no techado",
+    cat4_name: "Bosque no techados",
     cat4_short: "Bosque",
     cat4_desc:
-      "Sitios abiertos entre los árboles, en contacto directo con la naturaleza. Para quienes disfrutan dormir bajo las estrellas.",
-    cat4_price: "$10.000",
-    cat4_count: "3 sitios",
+      "Sitios abiertos entre los árboles, en contacto directo con la naturaleza. Para quienes disfrutan dormir bajo las estrellas y despertar con el canto de los pájaros.",
 
     price_unit: "p/p por noche",
     included: "Incluye",
@@ -194,9 +192,9 @@ window.TRANSLATIONS = {
 
     about_story_title: "Nuestra historia",
     about_story_p1:
-      "El proyecto nació con la idea de ofrecer paquetes de turismo de deportes extremos a lo largo de todo Chile. Buscando el lugar indicado para instalar la base de operaciones, la elección fue evidente: Pichilemu.",
+      "Todo comenzó con las ganas de ofrecer paquetes turísticos de deportes extremos a lugares especiales dentro de Chile. Lo que faltaba era una sede y alojamiento para nuestros pasajeros. Consideramos que Pichilemu era el lugar indicado y se nos ocurrió crear aquí la base, y que además fuese un camping.",
     about_story_p2:
-      "Aquí levantamos nuestra base y, junto a ella, el camping. Un lugar pensado para que quienes vienen a surfear, a caminar o simplemente a desconectarse, tengan dónde quedarse en contacto real con la naturaleza.",
+      "Esto nos permitió dar el primer paso en este proyecto, que pretendemos eventualmente replicarlo en otros lugares de Chile. Y además comenzar con los paquetes turísticos de surf y snowboard, aprovechando las bondades de nuestro país.",
     about_story_p3:
       "La idea es replicar este modelo en otros puntos del país, siguiendo las buenas olas desde Arica hasta Chiloé, y sumar paquetes de surf y snowboard según la temporada.",
 
@@ -392,20 +390,26 @@ window.TRANSLATIONS = {
 
     /* ---------- Testimonios ---------- */
     test_eyebrow: "Testimonios",
-    test_title_1: "Lo que dicen",
-    test_title_2: "nuestros visitantes",
+    test_title_1: "Lo que dicen en",
+    test_title_2: "Google",
+    test_see_all: "Ver todos los reviews en Google",
+    test_google_badge: "Google Reviews",
     test1_text:
-      "Una increíble experiencia, lugar siempre limpio y ordenado, los sitios para acampar están muy bien hechos. Funciona a base de energía solar. Cumple al 100% desconectarse de la ciudad y relajarse.",
+      "Una increíble experiencia, lugar siempre limpio, ordenado, los sitios para acampar están muy bien hechos, nosotros solicitamos uno con terraza y le da su plus, con puntos para cargar el teléfono o cosas de menor energía, ya que al ser un ecocamping funciona a base de energía solar. Cumple al 100% desconectarse de la ciudad y relajarse.",
     test1_name: "Nicole Soto",
     test1_date: "Octubre 2023",
     test2_text:
-      "Fuimos en auto, el camino estaba muy bien y Punta de Lobos quedaba a 10 minutos. En la noche el silencio y las estrellas se apoderan del lugar, es maravilloso. Muy recomendado, volveremos.",
+      "El camping tiene instalaciones de excelente nivel. Los baños siempre impecables, las duchas muy cómodas, amplias y buena temperatura. Los sitios quedan inmersos en medio de vegetación muy bonita, el cielo se veía espectacular. Fuimos en auto, el camino estaba muy bien y Punta de Lobos quedaba a 10 minutos. En la noche el silencio y las estrellas se apoderan del lugar, es maravilloso. Muy recomendado, volveremos.",
     test2_name: "Ambrosio Hernández",
     test2_date: "Mayo 2023",
     test3_text:
-      "Los espacios son muy buenos y están bien delimitados. Los que tienen terraza son hermosos y tienen una linda vista para disfrutar del atardecer y tomar un café.",
-    test3_name: "Natalia Gómez",
+      "Increíble experiencia en Punta de Lobos, un camping con todo lo necesario para estar cómodo y relajado. Está en medio del bosque y a pocos metros de la playa. En la noche el silencio y las estrellas se apoderan del lugar, es maravilloso, perfecto para reconectarse con la naturaleza. Destaco con 5 estrellas el baño y las duchas, súper amplio, cómodo y por sobre todo limpio. Completamente recomendado.",
+    test3_name: "Natalia Gómez Massa",
     test3_date: "Febrero 2023",
+    test4_text:
+      "Increíble lugar! Los espacios para acampar son muy buenos y están bien delimitados, cada uno cuenta con asadera y mesa de picnic, los que cuentan con terraza son hermosos y tienen una linda vista para disfrutar de la naturaleza, especialmente del atardecer y para tomar desayuno o disfrutar de un café.",
+    test4_name: "María Palazzo",
+    test4_date: "Enero 2023",
 
     /* ---------- Contacto ---------- */
     contact_eyebrow: "Reservas",
@@ -446,10 +450,10 @@ window.TRANSLATIONS = {
     footer_copy: "Olas de Chile Ecocamp. Made with respect for nature.",
 
     hero_eyebrow: "Ecocamp · Punta de Lobos, Pichilemu",
-    hero_title_1: "Days of disconnection",
-    hero_title_2: "in Pichilemu",
+    hero_title_1: "Give yourself days of",
+    hero_title_2: "disconnection in Pichilemu",
     hero_subtitle:
-      "Minutes from Punta de Lobos beach you will find Olas de Chile Ecocamp, an ideal place to enjoy days of rest and relaxation. You will sleep to the sound of the waves and see every star on a clear night.",
+      "Minutes from Punta de Lobos beach you will find Olas de Chile Ecocamp, an ideal place to enjoy days of rest and relaxation. Sleep to the sound of the waves and see every star on a clear night.",
     hero_cta_primary: "See all 16 sites",
     hero_cta_secondary: "How to get here",
     hero_scroll: "Discover more",
@@ -506,14 +510,14 @@ window.TRANSLATIONS = {
     cat3_name: "RVs and tents",
     cat3_short: "Motorhome",
     cat3_desc:
-      "Spacious sites with parking on the site itself and a power outlet, designed for RVs, campervans and large tents.",
+      "Spacious sites with parking on the site itself and a power outlet, designed for RVs, campervans and large tents. Your vehicle right next to your tent.",
     cat3_price: "$10.000",
     cat3_count: "4 sites",
 
     cat4_name: "Non-roofed forest",
     cat4_short: "Forest",
     cat4_desc:
-      "Open sites among the trees, in direct contact with nature. For those who enjoy sleeping under the stars.",
+      "Open sites among the trees, in direct contact with nature. For those who enjoy sleeping under the stars and waking up to birdsong.",
     cat4_price: "$10.000",
     cat4_count: "3 sites",
 
@@ -801,20 +805,26 @@ window.TRANSLATIONS = {
     gallery_4: "Olas de Chile",
 
     test_eyebrow: "Testimonials",
-    test_title_1: "What our",
-    test_title_2: "visitors say",
+    test_title_1: "What they say on",
+    test_title_2: "Google",
+    test_see_all: "See all Google reviews",
+    test_google_badge: "Google Reviews",
     test1_text:
-      "An incredible experience. The place is always clean and tidy and the camping sites are very well made. It runs on solar energy. It absolutely delivers on disconnecting from the city and relaxing.",
+      "An incredible experience. The place is always clean and tidy, the camping sites are very well made — we booked one with a terrace and it adds a real plus, with charging points for phones and other low-consumption devices since it's an ecocamp that runs entirely on solar energy. It absolutely delivers on disconnecting from the city and relaxing.",
     test1_name: "Nicole Soto",
     test1_date: "October 2023",
     test2_text:
-      "We went by car, the road was in good shape and Punta de Lobos was 10 minutes away. At night the silence and the stars take over the place — it's wonderful. Highly recommended, we will be back.",
+      "The campsite has top-quality facilities. The bathrooms are always spotless, the showers are very comfortable, spacious and at a good temperature. The sites are nestled among beautiful vegetation, the sky looked spectacular. We drove there, the road was in great shape and Punta de Lobos was only 10 minutes away. At night the silence and the stars take over the place — it's wonderful. Highly recommended, we will be back.",
     test2_name: "Ambrosio Hernández",
     test2_date: "May 2023",
     test3_text:
-      "The spaces are very good and well defined. The ones with a terrace are beautiful and have a lovely view to enjoy the sunset with a coffee.",
-    test3_name: "Natalia Gómez",
+      "An incredible experience in Punta de Lobos, a campsite with everything you need to be comfortable and relaxed. It's in the middle of the forest and just a few metres from the beach. At night the silence and the stars take over the place, it's wonderful, perfect for reconnecting with nature. I give 5 stars to the bathrooms and showers — super spacious, comfortable and above all clean. Absolutely recommended.",
+    test3_name: "Natalia Gómez Massa",
     test3_date: "February 2023",
+    test4_text:
+      "Amazing place! The camping spaces are very good and well defined, each one has a grill and a picnic table. The ones with a terrace are beautiful and have a lovely view to enjoy nature, especially the sunset and to have breakfast or enjoy a coffee.",
+    test4_name: "María Palazzo",
+    test4_date: "January 2023",
 
     contact_eyebrow: "Bookings",
     contact_title_1: "Plan your",

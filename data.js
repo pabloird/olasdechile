@@ -2,24 +2,24 @@
    Olas de Chile Ecocamp — données statiques
    ============================================================ */
 window.ODC_DATA = (function () {
-  var P = "https://images.pexels.com/photos/";
-  var q = "?auto=compress&cs=tinysrgb&w=1000";
+  var W = "https://static.wixstatic.com/media/";
+  var Q = "/v1/fill/w_1200,h_800,al_c,q_85,enc_avif,quality_auto/";
 
   var IMG = {
-    hero: P + "30548681/pexels-photo-30548681.jpeg?auto=compress&cs=tinysrgb&w=1800",
-    intro: P + "30041430/pexels-photo-30041430.jpeg" + q,
-    eco: P + "27873610/pexels-photo-27873610.jpeg" + q,
-    cat1: P + "19585294/pexels-photo-19585294.jpeg" + q,
-    cat2: P + "19178410/pexels-photo-19178410.jpeg" + q,
-    cat3: P + "7967392/pexels-photo-7967392.jpeg" + q,
-    cat4: P + "10513799/pexels-photo-10513799.jpeg" + q,
-    services: P + "6524840/pexels-photo-6524840.jpeg" + q,
-    about: P + "13644736/pexels-photo-13644736.jpeg" + q,
-    directions: P + "30157492/pexels-photo-30157492.jpeg" + q,
-    gal1: P + "13644736/pexels-photo-13644736.jpeg?auto=compress&cs=tinysrgb&w=1400",
-    gal2: P + "30157492/pexels-photo-30157492.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    gal3: P + "8960427/pexels-photo-8960427.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    gal4: P + "6524840/pexels-photo-6524840.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    hero: W + "d23542_9499eee315484ff78a5f3e06c20b9eb6~mv2.jpg/v1/fill/w_1800,h_1200,al_c,q_85,enc_avif,quality_auto/hero.jpg",
+    intro: W + "d23542_e9f635844db84be79685ba75f5399fa1~mv2.jpg" + Q + "intro.jpg",
+    eco: W + "d23542_fbe581ed32e946c7953bcb17f87e5f0c~mv2.jpg" + Q + "solar.jpg",
+    cat1: W + "d23542_13924b1fe4584154a0083b174dc730b7~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/cat1.jpg",
+    cat2: W + "d23542_db5b912bc67b452d8147d3f8271a5933~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/cat2.jpg",
+    cat3: W + "d23542_77f8a3accae84ad1a5074af1f1843912~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/cat3.jpg",
+    cat4: W + "d23542_722ac0cb5e084bff9682a042b9bdfb15~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/cat4.jpg",
+    services: W + "d23542_1a00ef08d80a49a9bb4d3262735b4678~mv2.jpg" + Q + "surf.jpg",
+    about: W + "d23542_eae392bc3f1746c4b5cece744ef53f67~mv2.png",
+    directions: W + "d23542_103ce58b44604495b4a7c913645d5d52~mv2.jpg" + Q + "directions.jpg",
+    gal1: W + "d23542_9499eee315484ff78a5f3e06c20b9eb6~mv2.jpg/v1/fill/w_1400,h_1000,al_c,q_85,enc_avif,quality_auto/gal1.jpg",
+    gal2: W + "d23542_9855a40635fa4be48c6cbeaa6e6af9bc~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/gal2.jpg",
+    gal3: W + "d23542_0890dc8045e0412bafccdac1443e4e88~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/gal3.jpg",
+    gal4: W + "d23542_9371199d588e4b18af4476bf680ae36a~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/gal4.jpg"
   };
 
   /* Les 4 catégories. `in` / `out` référencent les clés am_* de translations.js */
@@ -129,6 +129,13 @@ window.ODC_DATA = (function () {
     { key: "near3", icon: "pin" }
   ];
 
+  var REVIEWS = [
+    { name: "Nicole Soto", date: "Octubre 2023", stars: 5 },
+    { name: "Ambrosio Hernández", date: "Mayo 2023", stars: 5 },
+    { name: "Natalia Gómez Massa", date: "Febrero 2023", stars: 5 },
+    { name: "María Palazzo", date: "Enero 2023", stars: 5 }
+  ];
+
   return {
     IMG: IMG,
     CATEGORIES: CATEGORIES,
@@ -139,6 +146,9 @@ window.ODC_DATA = (function () {
     FAQ: FAQ,
     PACKING: PACKING,
     NEARBY: NEARBY,
+    REVIEWS: REVIEWS,
+    REVIEWS_COUNT: 4,
+    GOOGLE_REVIEWS: "https://www.google.com/maps/search/Olas+de+Chile+Ecocamp+Pichilemu",
     PHONE: "+56954504499",
     PHONE_PRETTY: "+56 9 5450 4499",
     WA: "https://wa.me/56954504499",

@@ -163,7 +163,13 @@
           '<span id="year"></span> · <span data-i18n="footer_copy"></span>' +
         "</div>" +
       "</footer>" +
-      '<a class="wa-float" href="' + D.WA + '" target="_blank" rel="noopener" aria-label="WhatsApp" data-wa="msg">' + ICONS.whatsapp + "</a>";
+      '<a class="wa-float" href="' + D.WA + '" target="_blank" rel="noopener" aria-label="WhatsApp" data-wa="msg">' +
+        ICONS.whatsapp +
+        '<span class="wa-tooltip" data-i18n="nav_book"></span>' +
+      "</a>" +
+      '<button class="back-to-top" id="backToTop" aria-label="Volver arriba">' +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>' +
+      "</button>";
   }
 
   /* ==========================================================
@@ -255,11 +261,11 @@
     }
     document.getElementById("galleryGrid").innerHTML = gal;
 
-    var initials = ["N", "A", "N"];
+    var initials = ["N", "A", "N", "M"];
     var tst = "";
-    for (var k = 1; k <= 3; k++) {
+    for (var k = 1; k <= 4; k++) {
       tst +=
-        '<article class="testimonial reveal d' + k + '">' +
+        '<article class="testimonial reveal d' + ((k % 3) + 1) + '">' +
           '<div class="stars">' + new Array(6).join(ICONS.star) + "</div>" +
           '<p class="testimonial-text" data-i18n="test' + k + '_text"></p>' +
           '<div class="testimonial-author"><span class="avatar">' + initials[k - 1] + "</span>" +
@@ -530,13 +536,19 @@
   function initNav() {
     var nav = document.getElementById("nav");
     var float = document.querySelector(".wa-float");
+    var btt = document.getElementById("backToTop");
 
     function onScroll() {
       nav.classList.toggle("scrolled", window.scrollY > 60);
       float.classList.toggle("show", window.scrollY > 400);
+      btt.classList.toggle("show", window.scrollY > 600);
     }
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
+
+    btt.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
 
     var burger = document.getElementById("burger");
     var menu = document.getElementById("mobileMenu");

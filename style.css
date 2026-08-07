@@ -618,7 +618,14 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
    TÉMOIGNAGES
    ============================================================ */
 .testimonials { background: var(--surface-alt); }
-.testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s3); }
+.testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--s3); }
+.google-badge {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  margin-top: var(--s2); padding: 0.4rem 1rem;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 100px;
+  font-size: 0.85rem; color: var(--muted);
+}
+.google-badge strong { color: var(--text); }
 .testimonial {
   display: flex; flex-direction: column;
   padding: var(--s4); background: var(--surface); border-radius: var(--r-lg); box-shadow: var(--sh-sm);
@@ -627,7 +634,8 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 .stars svg { width: 16px; height: 16px; fill: var(--accent); }
 .testimonial-text {
   flex: 1; margin-bottom: var(--s4);
-  font-family: var(--font-display); font-size: 1.02rem; line-height: 1.6;
+  font-family: var(--font-body); font-size: 0.94rem; line-height: 1.7;
+  display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; overflow: hidden;
 }
 .testimonial-author { display: flex; align-items: center; gap: 0.75rem; }
 .avatar {
@@ -687,17 +695,52 @@ a.footer-contact:hover { color: #fff; }
 .footer-bottom { padding-top: var(--s4); font-size: 0.8rem; color: rgba(255, 255, 255, 0.4); text-align: center; }
 
 /* ============================================================
-   WHATSAPP FLOTTANT + LIGHTBOX
+   WHATSAPP FLOTTANT + BACK TO TOP + LIGHTBOX
    ============================================================ */
 .wa-float {
   position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 90;
-  width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center;
-  background: #25d366; color: #fff; box-shadow: var(--sh-md);
-  transform: scale(0); transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+  width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center;
+  background: #25d366; color: #fff;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+  transform: scale(0); transition: transform 0.4s var(--ease), box-shadow var(--dur) var(--ease);
 }
 .wa-float.show { transform: scale(1); }
-.wa-float:hover { box-shadow: var(--sh-lg); }
-.wa-float svg { width: 26px; height: 26px; fill: currentColor; }
+.wa-float:hover { box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5); transform: scale(1.08); }
+.wa-float svg { width: 28px; height: 28px; fill: currentColor; }
+
+.wa-float::after {
+  content: "";
+  position: absolute; inset: -4px; border-radius: 50%; border: 2px solid #25d366;
+  opacity: 0; animation: waPulse 2s ease-out infinite;
+}
+@keyframes waPulse {
+  0% { opacity: 0.6; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.5); }
+}
+
+.wa-tooltip {
+  position: absolute; right: 68px; top: 50%; transform: translateY(-50%);
+  background: var(--text); color: #fff; font-size: 0.8rem; font-weight: 500;
+  padding: 0.5rem 1rem; border-radius: 100px; white-space: nowrap;
+  pointer-events: none; opacity: 0;
+  transition: opacity 0.3s var(--ease);
+}
+.wa-tooltip::after {
+  content: ""; position: absolute; right: -6px; top: 50%; transform: translateY(-50%);
+  border: 6px solid transparent; border-left-color: var(--text);
+}
+.wa-float:hover .wa-tooltip, .wa-float:focus-within .wa-tooltip { opacity: 1; }
+
+.back-to-top {
+  position: fixed; right: 1.25rem; bottom: 5.5rem; z-index: 89;
+  width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--surface); color: var(--primary); border: 1px solid var(--border);
+  box-shadow: var(--sh-sm); transform: translateY(20px); opacity: 0;
+  transition: transform 0.4s var(--ease), opacity 0.4s var(--ease), box-shadow var(--dur) var(--ease), background var(--dur) var(--ease);
+}
+.back-to-top.show { transform: translateY(0); opacity: 1; }
+.back-to-top:hover { background: var(--primary); color: #fff; box-shadow: var(--sh-md); }
+.back-to-top svg { width: 18px; height: 18px; }
 
 .lightbox {
   position: fixed; inset: 0; z-index: 150; display: grid; place-items: center;
@@ -771,4 +814,5 @@ a.footer-contact:hover { color: #fff; }
   .contact-info { flex-direction: column; gap: var(--s3); }
   .footer-top { grid-template-columns: 1fr; gap: var(--s4); }
   .wa-float { right: 1rem; bottom: 1rem; }
+  .back-to-top { right: 1rem; bottom: 5.2rem; }
 }
