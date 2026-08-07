@@ -28,24 +28,23 @@ window.ODC_DATA = (function () {
     chile_map: W + "d23542_2e6be141a3b3400ba505d7bfe017b4f5~mv2.jpg/v1/fill/w_700,h_1400,al_c,q_85,enc_avif,quality_auto/chile.jpg"
   };
 
-  /* Photos du slideshow hero — toutes les photos de la galerie du site original */
+  /* Photos du slideshow hero — 15 photos originales téléchargées du site */
   var HERO_SLIDES = [
-    "d23542_9499eee315484ff78a5f3e06c20b9eb6~mv2.jpg",
-    "d23542_e9f635844db84be79685ba75f5399fa1~mv2.jpg",
-    "d23542_b6897009f6b64b4e8898135fd3a8d77f~mv2.jpg",
-    "d23542_e316d3b4153b4d71961e9e683ebb2865~mv2.jpg",
-    "d23542_7c74444f0e554cb0be310a12ab44eb03~mv2.jpg",
-    "d23542_5552336918274477b7d1e4d2a2913b44~mv2.jpg",
-    "d23542_9855a40635fa4be48c6cbeaa6e6af9bc~mv2.jpg",
-    "d23542_c90fa974df2a49ac8be48b59816877f2~mv2.jpg",
-    "d23542_a0a9a82dd4db4ebc9c16e56914dd4979~mv2.jpg",
-    "d23542_ca8373fc9e4e4f9e9b2edf1a645d63a9~mv2.jpg",
-    "d23542_5127d5796de8430a815a0fe08bfca197~mv2.jpg",
-    "d23542_9371199d588e4b18af4476bf680ae36a~mv2.jpg",
-    "d23542_0890dc8045e0412bafccdac1443e4e88~mv2.jpg",
-    "d23542_178217cd3e884dd08114910700271809~mv2.jpg",
-    "d23542_7e4df10eb2d34654bed926a568b825cc~mv2.jpg",
-    "d23542_6e0f950734f845cda25c4649b4364907~mv2.jpg"
+    "d23542_828299395bda419d9b27a839920a53c1~mv2.webp",
+    "d23542_77825d8eb5b24fd3898e02f0c9022f20~mv2.webp",
+    "d23542_31ed67444e5f4d5cab55cbf48c7d71ae~mv2.webp",
+    "d23542_5d0a7a1a1c484b40b9f7c728b84fa868~mv2.webp",
+    "d23542_cdd7a62a2db24a8e9ac53637c569d756~mv2.webp",
+    "d23542_f0876f6bbf52401f887ea7d32f247e90~mv2.webp",
+    "d23542_2219820e11534022b5ed7601af8082e1~mv2.webp",
+    "d23542_4c0cc4c1683749438598171007ca0dd3~mv2.webp",
+    "d23542_a9cb0d3cc8a54128a0e354c2f6110514~mv2.webp",
+    "d23542_59277060e6534b84a99c92d614b834da~mv2.webp",
+    "d23542_eac0b7dabfeb48a1b26a899cc08aca70~mv2.webp",
+    "d23542_d950e78df3914c8cb99d1d65cf035efa~mv2.webp",
+    "d23542_cc9edef1d1fd43e6a5eea4387f173c78~mv2.webp",
+    "d23542_6cbe5f8941f247ee82b145da223c275a~mv2.webp",
+    "d23542_a4bf77a41c624091b0ec1464023bcf3d~mv2.webp"
   ];
 
   /* Les 4 catégories. `in` / `out` référencent les clés am_* de translations.js */

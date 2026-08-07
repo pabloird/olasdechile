@@ -644,7 +644,7 @@
     var html = "";
     for (var i = 0; i < D.HERO_SLIDES.length; i++) {
       html += '<div class="hero-slide' + (i === 0 ? ' active' : '') + '">' +
-        '<img src="' + W + D.HERO_SLIDES[i] + Q + 'h' + (i + 1) + '.jpg" alt=""' + (i > 0 ? ' loading="lazy"' : '') + ' /></div>';
+        '<img src="assets/hero/' + D.HERO_SLIDES[i] + '" alt="Olas de Chile Ecocamp — Punta de Lobos, Pichilemu"' + (i > 0 ? ' loading="lazy"' : '') + ' /></div>';
     }
     container.innerHTML = html;
 
