@@ -24,7 +24,7 @@ window.ODC_DATA = (function () {
     gal6: W + "d23542_b6897009f6b64b4e8898135fd3a8d77f~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/gal6.jpg",
     gal7: W + "d23542_e316d3b4153b4d71961e9e683ebb2865~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/gal7.jpg",
     gal8: W + "d23542_7c74444f0e554cb0be310a12ab44eb03~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/gal8.jpg",
-    site_plan: W + "d23542_c6f074aecbc24584ac3a0c86d7d927ab~mv2.jpg/v1/fill/w_1200,h_676,al_c,q_85,enc_avif,quality_auto/plano.jpg",
+    site_plan: "assets/plano.webp",
     chile_map: W + "d23542_2e6be141a3b3400ba505d7bfe017b4f5~mv2.jpg/v1/fill/w_700,h_1400,al_c,q_85,enc_avif,quality_auto/chile.jpg"
   };
 
