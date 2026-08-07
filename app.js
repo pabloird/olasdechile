@@ -157,7 +157,7 @@
             '<a class="footer-contact" href="tel:' + D.PHONE + '">' + ICONS.phone + "<span>" + D.PHONE_PRETTY + "</span></a>" +
             '<a class="footer-contact" href="' + D.WA + '" target="_blank" rel="noopener" data-wa="msg">' + ICONS.whatsapp + "<span>WhatsApp</span></a>" +
             '<a class="footer-contact" href="' + D.INSTAGRAM + '" target="_blank" rel="noopener">' + ICONS.instagram + "<span>@olasdechile</span></a>" +
-            '<span class="footer-contact">' + ICONS.pin + '<span data-i18n="contact_location"></span></span>' +
+            '<a class="footer-contact" href="indicaciones.html">' + ICONS.pin + '<span data-i18n="contact_location"></span></a>' +
           "</div>" +
         "</div>" +
         '<div class="wrap footer-bottom">' +

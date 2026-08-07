@@ -560,9 +560,20 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 
 .map {
   border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--sh-md);
-  aspect-ratio: 1/1; background: var(--surface-alt);
+  aspect-ratio: 1/1; background: var(--surface-alt); display: flex; flex-direction: column;
 }
-.map iframe { width: 100%; height: 100%; border: 0; filter: grayscale(0.15) contrast(0.96); }
+.map iframe { width: 100%; flex: 1; border: 0; filter: grayscale(0.15) contrast(0.96); }
+.map-links {
+  display: flex; gap: 0.4rem; padding: var(--s2);
+  background: var(--surface); border-top: 1px solid var(--border);
+}
+.map-link {
+  flex: 1; text-align: center; padding: 0.4rem 0.6rem;
+  font-size: 0.78rem; font-weight: 500; border-radius: var(--r-sm);
+  background: var(--surface-alt); color: var(--muted);
+  transition: background 0.2s var(--ease), color 0.2s var(--ease);
+}
+.map-link:hover { background: var(--primary); color: #fff; }
 
 .rules-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s3); }
 .rule-card {
