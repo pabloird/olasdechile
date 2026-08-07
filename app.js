@@ -636,7 +636,19 @@
   }
 
   function initHeroSlideshow() {
-    var slides = document.querySelectorAll(".hero-slide");
+    var container = document.getElementById("heroSlides");
+    if (!container || !D.HERO_SLIDES || !D.HERO_SLIDES.length) return;
+
+    var W = "https://static.wixstatic.com/media/";
+    var Q = "/v1/fill/w_1800,h_1200,al_c,q_85,enc_avif,quality_auto/";
+    var html = "";
+    for (var i = 0; i < D.HERO_SLIDES.length; i++) {
+      html += '<div class="hero-slide' + (i === 0 ? ' active' : '') + '">' +
+        '<img src="' + W + D.HERO_SLIDES[i] + Q + 'h' + (i + 1) + '.jpg" alt=""' + (i > 0 ? ' loading="lazy"' : '') + ' /></div>';
+    }
+    container.innerHTML = html;
+
+    var slides = container.querySelectorAll(".hero-slide");
     if (slides.length < 2) return;
 
     var prev = document.getElementById("heroPrev");
