@@ -69,6 +69,7 @@
     logo:
       '<picture class="logo-mark">' +
         '<source srcset="assets/logo.avif" type="image/avif" />' +
+        '<source srcset="assets/logo.webp" type="image/webp" />' +
         '<img src="assets/logo-web.png" alt="Olas de Chile Ecocamp" width="280" height="280" />' +
       "</picture>"
   };

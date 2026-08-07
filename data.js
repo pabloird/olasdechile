@@ -14,7 +14,7 @@ window.ODC_DATA = (function () {
     cat3: W + "d23542_77f8a3accae84ad1a5074af1f1843912~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/cat3.jpg",
     cat4: W + "d23542_722ac0cb5e084bff9682a042b9bdfb15~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/cat4.jpg",
     services: W + "d23542_1a00ef08d80a49a9bb4d3262735b4678~mv2.jpg" + Q + "surf.jpg",
-    about: W + "d23542_eae392bc3f1746c4b5cece744ef53f67~mv2.png",
+    about: W + "d23542_eae392bc3f1746c4b5cece744ef53f67~mv2.png/v1/fill/w_1200,h_800,al_c,q_85,enc_avif,quality_auto/about.jpg",
     directions: W + "d23542_103ce58b44604495b4a7c913645d5d52~mv2.jpg" + Q + "directions.jpg",
     gal1: W + "d23542_9499eee315484ff78a5f3e06c20b9eb6~mv2.jpg/v1/fill/w_1400,h_1000,al_c,q_85,enc_avif,quality_auto/gal1.jpg",
     gal2: W + "d23542_9855a40635fa4be48c6cbeaa6e6af9bc~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/gal2.jpg",
