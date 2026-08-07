@@ -173,7 +173,26 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   overflow: hidden;
 }
 .hero-bg { position: absolute; inset: 0; }
-.hero-bg img { width: 100%; height: 100%; object-fit: cover; }
+.hero-bg img, .hero-bg picture { width: 100%; height: 100%; object-fit: cover; }
+
+/* Hero slideshow */
+.hero-slides { position: absolute; inset: 0; }
+.hero-slide {
+  position: absolute; inset: 0; opacity: 0;
+  animation: heroFade 25s ease-in-out infinite;
+}
+.hero-slide:nth-child(1) { animation-delay: 0s; }
+.hero-slide:nth-child(2) { animation-delay: 5s; }
+.hero-slide:nth-child(3) { animation-delay: 10s; }
+.hero-slide:nth-child(4) { animation-delay: 15s; }
+.hero-slide:nth-child(5) { animation-delay: 20s; }
+.hero-slide img { width: 100%; height: 100%; object-fit: cover; }
+
+@keyframes heroFade {
+  0%, 16% { opacity: 1; }
+  20%, 96% { opacity: 0; }
+  100% { opacity: 1; }
+}
 .hero-overlay {
   position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(28,28,26,.45) 0%, rgba(28,28,26,.22) 42%, rgba(28,28,26,.62) 100%);
