@@ -253,8 +253,8 @@
     document.getElementById("catGrid").innerHTML = cats;
 
     var gal = "";
-    var srcs = [D.IMG.gal1, D.IMG.gal2, D.IMG.gal3, D.IMG.gal4];
-    for (var g = 0; g < 4; g++) {
+    var srcs = [D.IMG.gal1, D.IMG.gal2, D.IMG.gal3, D.IMG.gal4, D.IMG.gal5, D.IMG.gal6, D.IMG.gal7, D.IMG.gal8];
+    for (var g = 0; g < srcs.length; g++) {
       gal +=
         '<button type="button" class="gallery-item" data-full="' + srcs[g] + '">' +
           '<img src="' + srcs[g] + '" alt="" loading="lazy" />' +
@@ -307,6 +307,7 @@
               '<span class="site-cat" data-i18n="' + c.key + '_short"></span></span>' +
             "</div>" +
             '<p class="site-desc" data-i18n="' + s.d + '"></p>' +
+            '<span class="site-region">' + esc(s.r) + "</span>" +
             '<div class="site-card-foot">' +
               '<p><span class="site-price" data-i18n="' + c.key + '_price"></span>' +
                 '<span class="unit" data-i18n="price_unit"></span></p>' +
@@ -403,7 +404,7 @@
       for (var s = 0; s < cat.sites.length; s++) {
         waves +=
           '<li class="wave-chip"><span class="wave-n">' + cat.sites[s].n + "</span>" +
-          "<span>" + esc(cat.sites[s].name) + "</span></li>";
+          "<span>" + esc(cat.sites[s].name) + '<small> — ' + esc(cat.sites[s].r) + "</small></span></li>";
       }
     }
     document.getElementById("waveList").innerHTML = waves;

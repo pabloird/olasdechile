@@ -19,7 +19,13 @@ window.ODC_DATA = (function () {
     gal1: W + "d23542_9499eee315484ff78a5f3e06c20b9eb6~mv2.jpg/v1/fill/w_1400,h_1000,al_c,q_85,enc_avif,quality_auto/gal1.jpg",
     gal2: W + "d23542_9855a40635fa4be48c6cbeaa6e6af9bc~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/gal2.jpg",
     gal3: W + "d23542_0890dc8045e0412bafccdac1443e4e88~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/gal3.jpg",
-    gal4: W + "d23542_9371199d588e4b18af4476bf680ae36a~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/gal4.jpg"
+    gal4: W + "d23542_9371199d588e4b18af4476bf680ae36a~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/gal4.jpg",
+    gal5: W + "d23542_e9f635844db84be79685ba75f5399fa1~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/gal5.jpg",
+    gal6: W + "d23542_b6897009f6b64b4e8898135fd3a8d77f~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/gal6.jpg",
+    gal7: W + "d23542_e316d3b4153b4d71961e9e683ebb2865~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/gal7.jpg",
+    gal8: W + "d23542_7c74444f0e554cb0be310a12ab44eb03~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/gal8.jpg",
+    site_plan: W + "d23542_c6f074aecbc24584ac3a0c86d7d927ab~mv2.jpg/v1/fill/w_1200,h_676,al_c,q_85,enc_avif,quality_auto/plano.jpg",
+    chile_map: W + "d23542_2e6be141a3b3400ba505d7bfe017b4f5~mv2.jpg/v1/fill/w_700,h_1400,al_c,q_85,enc_avif,quality_auto/chile.jpg"
   };
 
   /* Les 4 catégories. `in` / `out` référencent les clés am_* de translations.js */
@@ -30,12 +36,12 @@ window.ODC_DATA = (function () {
       in: ["grill", "hammock", "table", "terrace"],
       out: ["plug", "bulb"],
       sites: [
-        { n: 1, name: "El Buey", d: "s1_desc" },
-        { n: 2, name: "Las Urracas", d: "s2_desc" },
-        { n: 3, name: "La Cúpula", d: "s3_desc" },
-        { n: 7, name: "Puertecillo", d: "s7_desc" },
-        { n: 15, name: "Buchupureo", d: "s15_desc" },
-        { n: 16, name: "Rinconada", d: "s16_desc" }
+        { n: 1, name: "El Buey", d: "s1_desc", r: "Arica, I Región" },
+        { n: 2, name: "Las Urracas", d: "s2_desc", r: "Iquique, I Región" },
+        { n: 3, name: "La Cúpula", d: "s3_desc", r: "Antofagasta, II Región" },
+        { n: 7, name: "Puertecillo", d: "s7_desc", r: "O'Higgins, VI Región" },
+        { n: 15, name: "Buchupureo", d: "s15_desc", r: "Ñuble, XVI Región" },
+        { n: 16, name: "Rinconada", d: "s16_desc", r: "Bio Bío, VIII Región" }
       ]
     },
     {
@@ -44,9 +50,9 @@ window.ODC_DATA = (function () {
       in: ["grill", "hammock", "table"],
       out: ["plug", "bulb", "parking"],
       sites: [
-        { n: 4, name: "Portofino", d: "s4_desc" },
-        { n: 5, name: "Totoralillo", d: "s5_desc" },
-        { n: 6, name: "Tahai", d: "s6_desc" }
+        { n: 4, name: "Portofino", d: "s4_desc", r: "Atacama, III Región" },
+        { n: 5, name: "Totoralillo", d: "s5_desc", r: "La Serena, IV Región" },
+        { n: 6, name: "Tahai", d: "s6_desc", r: "Rapa Nui, V Región" }
       ]
     },
     {
@@ -55,10 +61,10 @@ window.ODC_DATA = (function () {
       in: ["grill", "table", "plug", "parking"],
       out: ["bulb", "hammock", "septic"],
       sites: [
-        { n: 8, name: "Pullay", d: "s8_desc" },
-        { n: 9, name: "El Faro", d: "s9_desc" },
-        { n: 10, name: "Mehuín", d: "s10_desc" },
-        { n: 11, name: "Carelmapu", d: "s11_desc" }
+        { n: 8, name: "Pullay", d: "s8_desc", r: "Ñuble, XVI Región" },
+        { n: 9, name: "El Faro", d: "s9_desc", r: "Chiloé, X Región" },
+        { n: 10, name: "Mehuín", d: "s10_desc", r: "Valdivia, XIV Región" },
+        { n: 11, name: "Carelmapu", d: "s11_desc", r: "De los Lagos, X Región" }
       ]
     },
     {
@@ -67,9 +73,9 @@ window.ODC_DATA = (function () {
       in: ["grill", "table"],
       out: ["plug", "bulb", "parking", "hammock"],
       sites: [
-        { n: 12, name: "Infiernillo", d: "s12_desc" },
-        { n: 13, name: "La Puntilla", d: "s13_desc" },
-        { n: 14, name: "Tumán", d: "s14_desc" }
+        { n: 12, name: "Infiernillo", d: "s12_desc", r: "O'Higgins, VI Región" },
+        { n: 13, name: "La Puntilla", d: "s13_desc", r: "O'Higgins, VI Región" },
+        { n: 14, name: "Tumán", d: "s14_desc", r: "O'Higgins, VI Región" }
       ]
     }
   ];

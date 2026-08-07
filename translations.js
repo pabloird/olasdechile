@@ -126,6 +126,12 @@ window.TRANSLATIONS = {
       "Los precios son por persona y por noche. Escríbenos por WhatsApp indicando las fechas, el número de personas y el sitio que te interesa.",
     sitios_all: "Todos",
 
+    plan_eyebrow: "Plano del camping",
+    plan_title_1: "Así se distribuyen",
+    plan_title_2: "los 16 sitios",
+    plan_lead: "Cada sitio está bien separado del resto para que tengas tu propio espacio. Ubica el que más te guste y contáctanos para reservarlo.",
+    plan_caption: "Plano general de Olas de Chile Ecocamp — Alto Punta de Lobos, Pichilemu.",
+
     /* Descripciones de sitios individuales */
     s1_desc: "El más amplio de los techados con terraza, con vista abierta hacia el poniente.",
     s2_desc: "Rodeado de árboles nativos donde suelen posarse las urracas al atardecer.",
@@ -249,6 +255,8 @@ window.TRANSLATIONS = {
       "Dirígete hacia el norte por Camino a Cáhuil y 300 metros después del cruce a playa Punta de Lobos, toma el camino hacia la derecha, hacia el cerro (ruta I-492). Después de andar 1,6 km, pasado el condominio Anulen, dobla a la derecha, recorre 600 metros y darás con el portón a tu izquierda.",
     dir_note:
       "Importante: no tomes el camino Catrianca (más al sur del cruce a Punta de Lobos). Termina en un portón privado y tendrás que devolverte.",
+    dir_photo1: "Ruta I-492 hacia el cerro",
+    dir_photo2: "Desvío a Olas de Chile Ecocamp",
 
     dir_near_eyebrow: "Alrededor",
     dir_near_title_1: "Qué tienes",
@@ -383,10 +391,14 @@ window.TRANSLATIONS = {
     gallery_eyebrow: "Galería",
     gallery_title_1: "Vive la",
     gallery_title_2: "experiencia",
-    gallery_1: "Atardecer en Punta de Lobos",
+    gallery_1: "Vista panorámica del ecocamp",
     gallery_2: "Noches estrelladas",
     gallery_3: "Fogón comunitario",
-    gallery_4: "Olas de Chile",
+    gallery_4: "Senderos entre los árboles",
+    gallery_5: "Atardecer desde los sitios",
+    gallery_6: "Bosque nativo",
+    gallery_7: "Terraza con vista",
+    gallery_8: "Despertar en el bosque",
 
     /* ---------- Testimonios ---------- */
     test_eyebrow: "Testimonios",
@@ -547,6 +559,12 @@ window.TRANSLATIONS = {
       "Prices are per person, per night. Message us on WhatsApp with your dates, the number of people and the site you're interested in.",
     sitios_all: "All",
 
+    plan_eyebrow: "Site map",
+    plan_title_1: "How the 16 sites",
+    plan_title_2: "are laid out",
+    plan_lead: "Each site is well separated from the rest so you get your own space. Find the one you like best and get in touch to book it.",
+    plan_caption: "General layout of Olas de Chile Ecocamp — Alto Punta de Lobos, Pichilemu.",
+
     s1_desc: "The largest of the roofed sites with terrace, with an open view to the west.",
     s2_desc: "Surrounded by native trees where the magpies usually perch at dusk.",
     s3_desc: "Its curved roof gives it its name and a particular acoustic when it rains.",
@@ -666,6 +684,8 @@ window.TRANSLATIONS = {
       "Head north along Camino a Cáhuil and 300 metres after the turn-off to Punta de Lobos beach, take the road on the right, towards the hill (route I-492). After 1.6 km, past the Anulen condominium, turn right, drive 600 metres and you will find our gate on your left.",
     dir_note:
       "Important: do not take the Catrianca road (further south of the Punta de Lobos turn-off). It ends at a private gate and you'll have to turn back.",
+    dir_photo1: "Route I-492 towards the hill",
+    dir_photo2: "Turn-off to Olas de Chile Ecocamp",
 
     dir_near_eyebrow: "Nearby",
     dir_near_title_1: "What you have",
@@ -799,10 +819,14 @@ window.TRANSLATIONS = {
     gallery_eyebrow: "Gallery",
     gallery_title_1: "Live the",
     gallery_title_2: "experience",
-    gallery_1: "Sunset at Punta de Lobos",
+    gallery_1: "Panoramic view of the ecocamp",
     gallery_2: "Starry nights",
     gallery_3: "Community campfire",
-    gallery_4: "Olas de Chile",
+    gallery_4: "Trails among the trees",
+    gallery_5: "Sunset from the sites",
+    gallery_6: "Native forest",
+    gallery_7: "Terrace view",
+    gallery_8: "Waking up in the forest",
 
     test_eyebrow: "Testimonials",
     test_title_1: "What they say on",
