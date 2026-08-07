@@ -656,7 +656,7 @@
     var dots = document.getElementById("heroDots");
     var current = 0;
     var timer = null;
-    var INTERVAL = 5000;
+    var INTERVAL = 6000;
 
     for (var i = 0; i < slides.length; i++) {
       var dot = document.createElement("button");
