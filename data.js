@@ -30,21 +30,21 @@ window.ODC_DATA = (function () {
 
   /* Photos du slideshow hero — 15 photos originales téléchargées du site */
   var HERO_SLIDES = [
-    "d23542_828299395bda419d9b27a839920a53c1~mv2.webp",
-    "d23542_77825d8eb5b24fd3898e02f0c9022f20~mv2.webp",
-    "d23542_31ed67444e5f4d5cab55cbf48c7d71ae~mv2.webp",
-    "d23542_5d0a7a1a1c484b40b9f7c728b84fa868~mv2.webp",
-    "d23542_cdd7a62a2db24a8e9ac53637c569d756~mv2.webp",
-    "d23542_f0876f6bbf52401f887ea7d32f247e90~mv2.webp",
-    "d23542_2219820e11534022b5ed7601af8082e1~mv2.webp",
-    "d23542_4c0cc4c1683749438598171007ca0dd3~mv2.webp",
-    "d23542_a9cb0d3cc8a54128a0e354c2f6110514~mv2.webp",
-    "d23542_59277060e6534b84a99c92d614b834da~mv2.webp",
-    "d23542_eac0b7dabfeb48a1b26a899cc08aca70~mv2.webp",
-    "d23542_d950e78df3914c8cb99d1d65cf035efa~mv2.webp",
-    "d23542_cc9edef1d1fd43e6a5eea4387f173c78~mv2.webp",
+    "d23542_a4bf77a41c624091b0ec1464023bcf3d~mv2.webp",
     "d23542_6cbe5f8941f247ee82b145da223c275a~mv2.webp",
-    "d23542_a4bf77a41c624091b0ec1464023bcf3d~mv2.webp"
+    "d23542_cc9edef1d1fd43e6a5eea4387f173c78~mv2.webp",
+    "d23542_d950e78df3914c8cb99d1d65cf035efa~mv2.webp",
+    "d23542_eac0b7dabfeb48a1b26a899cc08aca70~mv2.webp",
+    "d23542_59277060e6534b84a99c92d614b834da~mv2.webp",
+    "d23542_a9cb0d3cc8a54128a0e354c2f6110514~mv2.webp",
+    "d23542_4c0cc4c1683749438598171007ca0dd3~mv2.webp",
+    "d23542_2219820e11534022b5ed7601af8082e1~mv2.webp",
+    "d23542_f0876f6bbf52401f887ea7d32f247e90~mv2.webp",
+    "d23542_cdd7a62a2db24a8e9ac53637c569d756~mv2.webp",
+    "d23542_5d0a7a1a1c484b40b9f7c728b84fa868~mv2.webp",
+    "d23542_31ed67444e5f4d5cab55cbf48c7d71ae~mv2.webp",
+    "d23542_77825d8eb5b24fd3898e02f0c9022f20~mv2.webp",
+    "d23542_828299395bda419d9b27a839920a53c1~mv2.webp"
   ];
 
   /* Les 4 catégories. `in` / `out` référencent les clés am_* de translations.js */
