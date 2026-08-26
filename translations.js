@@ -12,9 +12,20 @@ window.TRANSLATIONS = {
     nav_home: "Inicio",
     nav_sites: "Sitios",
     nav_services: "Servicios",
+    nav_activities: "Actividades",
     nav_about: "Conócenos",
     nav_directions: "Cómo llegar",
+    nav_how: "Cómo funcionamos",
     nav_contact: "Contacto",
+    nav_faq: "Preguntas frecuentes",
+    nav_gallery: "Galería",
+    nav_experiences: "Experiencias",
+    nav_before: "Antes de venir",
+    contact_page_meta: "Contacto y reservas de Olas de Chile Ecocamp en Punta de Lobos, Pichilemu.",
+    contact_page_eyebrow: "Contacto",
+    contact_page_title_1: "Hablemos de tu",
+    contact_page_title_2: "próxima estadía",
+    contact_page_lead: "Escríbenos para reservar, resolver tus dudas o coordinar tu llegada.",
     nav_book: "Reservar",
 
     footer_tagline:
@@ -29,7 +40,7 @@ window.TRANSLATIONS = {
     hero_title_2: "desconexión en Pichilemu",
     hero_subtitle:
       "A minutos de la playa Punta de Lobos encontrarás Olas de Chile Ecocamp, un lugar ideal para días de relajo y descanso. Dormirás al sonido de las olas y verás todas las estrellas en una noche despejada.",
-    hero_cta_primary: "Ver los 16 sitios",
+    hero_cta_primary: "Ver los 18 sitios",
     hero_cta_secondary: "Cómo llegar",
     hero_scroll: "Descubre más",
 
@@ -41,12 +52,12 @@ window.TRANSLATIONS = {
     intro_p1:
       "Olas de Chile Ecocamp es un camping sostenible ubicado en Alto Punta de Lobos, a minutos de una de las playas más famosas para surfear en el mundo.",
     intro_p2:
-      "Pensado para quienes buscan una pausa real: 16 sitios amplios y bien delimitados, energía solar, baños impecables y el sonido del mar de fondo. Cada sitio lleva el nombre de una buena ola de la costa chilena.",
+      "Pensado para quienes buscan una pausa real: 18 sitios amplios y bien delimitados, energía solar, baños impecables y el sonido del mar de fondo. Cada sitio lleva el nombre de una buena ola de la costa chilena.",
     intro_price_label: "Desde",
     intro_price_value: "$10.000",
     intro_price_unit: "p/p por noche",
 
-    stat1_v: "16",
+    stat1_v: "18",
     stat1_l: "Sitios de camping",
     stat2_v: "100%",
     stat2_l: "Energía solar",
@@ -60,16 +71,16 @@ window.TRANSLATIONS = {
     sites_title_1: "Elige el santuario",
     sites_title_2: "perfecto para ti",
     sites_lead:
-      "16 sitios repartidos en cuatro categorías, todos bien separados entre sí. Cada uno lleva el nombre de una ola de la costa chilena, de Arica a Chiloé.",
-    sites_cta: "Ver los 16 sitios en detalle",
+      "18 sitios repartidos en cinco categorías, todos bien separados entre sí. Cada uno lleva el nombre de una ola de la costa chilena, de Arica a Chiloé.",
+    sites_cta: "Ver las 5 categorías de sitios",
 
     /* ---------- Home · Servicios teaser ---------- */
-    svc_teaser_eyebrow: "Extras y servicios",
-    svc_teaser_title_1: "Todo lo que necesitas,",
-    svc_teaser_title_2: "y algo más",
+    svc_teaser_eyebrow: "Actividades",
+    svc_teaser_title_1: "Vive algo más",
+    svc_teaser_title_2: "durante tu estadía",
     svc_teaser_lead:
-      "Arriendo de bicicletas, clases de surf, kayak en la laguna de Cáhuil, spa, traslados y un almacén en el mismo camping para lo que se te haya olvidado.",
-    svc_teaser_cta: "Ver todos los servicios",
+      "Explora en bicicleta, aprende a surfear, navega en kayak por la laguna de Cáhuil o descubre los alrededores a tu ritmo.",
+    svc_teaser_cta: "Ver todas las actividades",
 
     /* ---------- Categorías de sitios (compartido) ---------- */
     cat1_name: "Techados con terraza",
@@ -86,17 +97,24 @@ window.TRANSLATIONS = {
     cat2_price: "$14.000",
     cat2_count: "3 sitios",
 
-    cat3_name: "Vehículos recreacionales y carpas",
-    cat3_short: "Motorhome",
+    cat3_name: "Acceso vehículo / motorhome",
+    cat3_short: "Vehículo",
     cat3_desc:
       "Sitios amplios con estacionamiento en el mismo sitio y enchufe, pensados para casas rodantes, campers y carpas grandes. Tu vehículo al lado de tu carpa.",
     cat3_price: "$10.000",
-    cat3_count: "4 sitios",
+    cat3_count: "2 sitios",
 
     cat4_name: "Bosque no techados",
     cat4_short: "Bosque",
     cat4_desc:
       "Sitios abiertos entre los árboles, en contacto directo con la naturaleza. Para quienes disfrutan dormir bajo las estrellas y despertar con el canto de los pájaros.",
+    cat4_price: "$10.000",
+    cat4_count: "3 sitios",
+    cat5_name: "Glamping",
+    cat5_short: "Glamping",
+    cat5_desc: "Tienda equipada con cama, ropa de cama, mesa pequeña, alfombra e iluminación solar: más comodidad sin perder el contacto con la naturaleza.",
+    cat5_price: "$30.000",
+    cat5_count: "4 sitios",
 
     price_unit: "p/p por noche",
     included: "Incluye",
@@ -116,20 +134,20 @@ window.TRANSLATIONS = {
     am_terrace: "Terraza privada",
 
     /* ---------- Página Sitios ---------- */
-    sitios_meta: "16 sitios de camping en Alto Punta de Lobos, Pichilemu. Techados con terraza, techados, para casas rodantes y en el bosque.",
+    sitios_meta: "18 sitios de camping en Alto Punta de Lobos, Pichilemu: techados, con terraza, para motorhome, bosque y glamping.",
     sitios_eyebrow: "Sitios de camping",
-    sitios_title_1: "16 sitios,",
-    sitios_title_2: "16 olas chilenas",
+    sitios_title_1: "18 sitios,",
+    sitios_title_2: "18 olas chilenas",
     sitios_lead:
-      "Cada sitio lleva el nombre de una buena ola de la costa de Chile. Todos incluyen parrilla y mesa de picnic, y están bien separados entre sí para que tengas tu propio espacio.",
+      "Conservamos los nombres de 18 olas chilenas para contar la historia del camping. La reserva se realiza por categoría, no por número de sitio, para que podamos asignarte el mejor espacio disponible.",
     sitios_note:
-      "Los precios son por persona y por noche. Escríbenos por WhatsApp indicando las fechas, el número de personas y el sitio que te interesa.",
+      "Los precios son por persona y por noche. Escríbenos por WhatsApp indicando las fechas, el número de personas y la categoría que te interesa.",
     sitios_all: "Todos",
 
     plan_eyebrow: "Plano del camping",
     plan_title_1: "Así se distribuyen",
-    plan_title_2: "los 16 sitios",
-    plan_lead: "Cada sitio está bien separado del resto para que tengas tu propio espacio. Ubica el que más te guste y contáctanos para reservarlo.",
+    plan_title_2: "los 18 sitios",
+    plan_lead: "El plano conserva los nombres de las olas como parte de la historia del camping. Para reservar, elige una categoría y contáctanos.",
     plan_caption: "Plano general de Olas de Chile Ecocamp — Alto Punta de Lobos, Pichilemu.",
 
     /* Descripciones de sitios individuales */
@@ -151,15 +169,20 @@ window.TRANSLATIONS = {
     s14_desc: "Abierto al cielo, el mejor para mirar las estrellas.",
 
     /* ---------- Página Servicios ---------- */
-    svc_meta: "Arriendo de bicicletas, clases de surf, kayak, stand up paddle, trekking, spa, traslados, almacén y lavandería en Olas de Chile Ecocamp.",
-    svc_eyebrow: "Extras y servicios",
+    svc_meta: "Arriendo de bicicletas, clases de surf, kayak, trekking, baños impecables, clubhouse, fogón, hot tub, traslados, almacén y lavandería en Olas de Chile Ecocamp.",
+    activities_meta: "Kayak, surf, trekking y bicicletas en Olas de Chile Ecocamp, Punta de Lobos, Pichilemu.",
+    activities_eyebrow: "Actividades",
+    activities_title_1: "Vive la costa",
+    activities_title_2: "a tu manera",
+    activities_lead: "Kayak de travesía, surf con escuelas asociadas, trekking y bicicleta para descubrir el litoral.",
+    svc_eyebrow: "Servicios y extras",
     svc_title_1: "Haz de tu estadía",
     svc_title_2: "una experiencia",
     svc_lead:
-      "Además del sitio, organizamos actividades y servicios para que aproveches al máximo tu paso por Pichilemu. Todo se reserva con anticipación por WhatsApp.",
+      "Comodidad real en medio de la naturaleza: baños impecables, espacios para compartir y servicios prácticos para una estadía tranquila.",
 
     svc_act_title: "Actividades",
-    svc_extra_title: "Servicios adicionales",
+    svc_extra_title: "Servicios del camping",
 
     svc1_name: "Arriendo de bicicletas",
     svc1_desc: "Bicicletas disponibles con recomendación de rutas por los alrededores, la costa y los cerros. Reserva con anticipación.",
@@ -167,26 +190,59 @@ window.TRANSLATIONS = {
     svc2_desc: "Salidas guiadas por la laguna de Cáhuil y el estero, con opciones para todos los niveles.",
     svc3_name: "Surf",
     svc3_desc: "Arriendo de equipo, clases grupales y tutoriales para principiantes y avanzados, a minutos de Punta de Lobos.",
-    svc4_name: "Stand Up Paddle",
-    svc4_desc: "Paseos tranquilos por la laguna de Cáhuil, ideales para hacer en familia o al atardecer.",
     svc5_name: "Trekking",
     svc5_desc: "Senderos para todos los niveles, desde caminatas cortas hasta rutas por los cerros de la costa.",
+
+    svc_bath_name: "Baños y duchas",
+    svc_bath_desc: "Instalaciones impecables, duchas con agua caliente, nueva ducha exterior, lavamanos y lavaplatos para una estadía cómoda.",
+    svc_club_name: "Clubhouse",
+    svc_club_desc: "Espacio cálido con películas y proyector, juegos, bar, ping-pong y pool. Servicio adicional con reserva.",
+    svc_firepit_name: "Fogón",
+    svc_firepit_desc: "Un espacio de encuentro para compartir después de la hora de silencio de los sitios. Servicio adicional con reserva.",
+    svc_hot_name: "Hot tub",
+    svc_hot_desc: "Relajación al aire libre, disponible próximamente como servicio adicional con reserva.",
 
     svc6_name: "Almacén",
     svc6_desc: "Haces de leña, papel higiénico, insumos de cocinilla, gas para cocinilla, parches para colchones inflables, velas y encendedores.",
     svc7_name: "Fotografía",
-    svc7_desc: "Fotos y videos de tus actividades deportivas, para que te lleves el recuerdo de la sesión.",
+    svc7_desc: "Te fotografiamos en tu ola: fotos, video y dron de tus actividades deportivas para llevarte el recuerdo de la sesión.",
     svc8_name: "Traslados",
     svc8_desc: "Desde el aeropuerto, el terminal de buses o dentro de Pichilemu. Coordina con anticipación.",
-    svc9_name: "Spa y bienestar",
-    svc9_desc: "Tinajas, sauna, masajes y momentos de relajación después de un día de mar.",
     svc10_name: "Eventos",
     svc10_desc: "Cumpleaños, salidas de curso, paseos de empresa y retiros. Cotiza según el tamaño del grupo.",
     svc11_name: "Lavandería",
     svc11_desc: "Servicio de lavado de ropa para estadías largas o después de días de camping.",
 
-    svc_cta_title: "¿Quieres agregar una actividad?",
-    svc_cta_text: "Escríbenos y armamos tu estadía a medida, según los días que vengas y lo que quieras hacer.",
+    svc_cta_title: "¿Quieres una experiencia a medida?",
+    svc_cta_text: "Escríbenos y armamos una escapada a medida para parejas, grupos, colegios, universidades o empresas.",
+    svc_santuario_link: "Conocer Santuario Expediciones",
+    partner_eyebrow: "Nuestra propia agencia de expediciones",
+    partner_title: "Descubre la costa con Santuario Expediciones",
+    partner_text: "Desde Olas de Chile también creamos experiencias de expedición, fotografía y naturaleza para descubrir Punta de Lobos y los paisajes de la costa de Chile.",
+    partner_link: "Conocer Santuario Expediciones",
+
+    how_eyebrow: "Antes de venir",
+    how_meta: "Horarios, reglas de convivencia, energía solar, baños y checklist para preparar tu estadía en Olas de Chile Ecocamp.",
+    how_title_1: "Cómo",
+    how_title_2: "funcionamos",
+    how_lead: "Todo lo esencial para preparar una estadía cómoda y respetuosa con el entorno.",
+    how_checkin_title: "Check-in y check-out",
+    how_checkin_text: "Check-in a partir de las 15:00. Check-out hasta las 12:00.",
+    how_notice_label: "Información importante",
+    how_notice_text: "Check-in desde las 15:00 · check-out hasta las 12:00",
+    how_comfort_title: "Comodidad y energía",
+    how_comfort_text: "Hay agua caliente, electricidad solar y espacios comunes. Trae linterna, abrigo y tu equipo personal.",
+    how_rules_title: "Convivencia",
+    how_rules_text: "Respetamos el silencio, separamos los residuos y cuidamos el agua, la flora y la fauna del lugar.",
+    team_eyebrow: "Nuestro equipo",
+    team_title: "Las personas detrás del ecocamp",
+    team_pablo_name: "Pablo Rosés — Fundador / Gerente",
+    team_pablo_text: "Amante de la naturaleza, los viajes y la fotografía. También impulsa Santuario Expediciones y proyectos de turismo de naturaleza y conservación.",
+    team_daniel_name: "Daniel Víriguez — Administrador",
+    team_daniel_text: "Está a cargo de la operación diaria y de que cada visita al ecocamp sea cálida, cómoda y bien cuidada.",
+    editorial_eyebrow: "Olas de Chile",
+    editorial_title: "Una costa que nos inspira",
+    editorial_text: "El nombre del proyecto nace de los miles de kilómetros de costa chilena, sus olas, ecosistemas intermareales y biodiversidad. También nos recuerda la importancia de proteger los corredores biológicos, la Ley de Rompientes y las comunidades que viven del mar.",
 
     /* ---------- Página Conócenos ---------- */
     about_meta: "La historia, la misión y el compromiso ambiental de Olas de Chile Ecocamp en Punta de Lobos, Pichilemu.",
@@ -238,7 +294,7 @@ window.TRANSLATIONS = {
     about_map_title_1: "Las olas que",
     about_map_title_2: "dan nombre a los sitios",
     about_map_lead:
-      "Cada uno de los 16 sitios lleva el nombre de una buena ola chilena. Es nuestra manera de tener presente el resto de la costa mientras estás aquí.",
+      "Cada uno de los 18 sitios lleva el nombre de una buena ola chilena. Es nuestra manera de tener presente el resto de la costa mientras estás aquí.",
 
     /* ---------- Página Indicaciones ---------- */
     dir_meta: "Cómo llegar a Olas de Chile Ecocamp en Alto Punta de Lobos, Pichilemu, y todo lo que necesitas saber antes de venir.",
@@ -317,6 +373,7 @@ window.TRANSLATIONS = {
 
     /* ---------- FAQ ---------- */
     faq_eyebrow: "Preguntas frecuentes",
+    faq_meta: "Preguntas frecuentes sobre reservas, sitios, servicios, horarios, baños y convivencia en Olas de Chile Ecocamp.",
     faq_title_1: "Todo lo que",
     faq_title_2: "sueles preguntarnos",
     faq_lead:
@@ -346,6 +403,16 @@ window.TRANSLATIONS = {
     faq11_a: "Sí, hay varias opciones y para todos los gustos. Pregunta al personal del camping.",
     faq12_q: "No quedan sitios, ¿qué hago?",
     faq12_a: "Escríbenos o llámanos al +569 5450 4499 y vemos qué podemos hacer.",
+    faq13_q: "¿A qué hora es el check-in y el check-out?",
+    faq13_a: "El check-in es a partir de las 15:00 y el check-out hasta las 12:00.",
+    faq14_q: "¿Puedo reservar un número de sitio específico?",
+    faq14_a: "No. La reserva se realiza por categoría —por ejemplo, techado, bosque, vehículo o glamping— y el equipo asigna el mejor sitio disponible según la ocupación.",
+    faq15_q: "¿Qué incluye el glamping?",
+    faq15_a: "Incluye una tienda equipada, cama, ropa de cama, una mesa pequeña, alfombra e iluminación solar. Es una opción con más comodidad, manteniendo el contacto con la naturaleza.",
+    faq16_q: "¿Los servicios y actividades requieren reserva?",
+    faq16_a: "Sí. El clubhouse, el fogón, el hot tub, el kayak, el surf, el trekking, las bicicletas y la fotografía se coordinan con anticipación por WhatsApp. El hot tub está próximamente disponible.",
+    faq17_q: "¿Cómo son los baños y las duchas?",
+    faq17_a: "Los baños son cómodos, limpios y cuentan con duchas de agua caliente. También hay una nueva ducha exterior, lavamanos y lavaplatos.",
 
     /* ---------- Checklist equipaje ---------- */
     pack_eyebrow: "Antes de armar la mochila",
@@ -389,6 +456,7 @@ window.TRANSLATIONS = {
 
     /* ---------- Galería ---------- */
     gallery_eyebrow: "Galería",
+    gallery_meta: "Galería de fotos de Olas de Chile Ecocamp, Punta de Lobos y Pichilemu.",
     gallery_title_1: "Vive la",
     gallery_title_2: "experiencia",
     gallery_1: "Vista panorámica del ecocamp",
@@ -450,9 +518,20 @@ window.TRANSLATIONS = {
     nav_home: "Home",
     nav_sites: "Sites",
     nav_services: "Services",
+    nav_activities: "Activities",
     nav_about: "About us",
     nav_directions: "Directions",
+    nav_how: "How it works",
     nav_contact: "Contact",
+    nav_faq: "FAQ",
+    nav_gallery: "Gallery",
+    nav_experiences: "Experiences",
+    nav_before: "Before you come",
+    contact_page_meta: "Contact and bookings for Olas de Chile Ecocamp in Punta de Lobos, Pichilemu.",
+    contact_page_eyebrow: "Contact",
+    contact_page_title_1: "Let’s talk about your",
+    contact_page_title_2: "next stay",
+    contact_page_lead: "Message us to book, ask questions or coordinate your arrival.",
     nav_book: "Book now",
 
     footer_tagline:
@@ -466,7 +545,7 @@ window.TRANSLATIONS = {
     hero_title_2: "disconnection in Pichilemu",
     hero_subtitle:
       "Minutes from Punta de Lobos beach you will find Olas de Chile Ecocamp, an ideal place to enjoy days of rest and relaxation. Sleep to the sound of the waves and see every star on a clear night.",
-    hero_cta_primary: "See all 16 sites",
+    hero_cta_primary: "See all 18 sites",
     hero_cta_secondary: "How to get here",
     hero_scroll: "Discover more",
 
@@ -477,12 +556,12 @@ window.TRANSLATIONS = {
     intro_p1:
       "Olas de Chile Ecocamp is a sustainable campsite in Alto Punta de Lobos, minutes from one of the world's most famous surfing beaches.",
     intro_p2:
-      "Designed for those seeking a real break: 16 spacious, well-defined sites, solar energy, impeccable bathrooms and the sound of the sea in the background. Each site is named after a good wave along the Chilean coast.",
+      "Designed for those seeking a real break: 18 spacious, well-defined sites, solar energy, impeccable bathrooms and the sound of the sea in the background. Each site is named after a good wave along the Chilean coast.",
     intro_price_label: "From",
     intro_price_value: "$10.000",
     intro_price_unit: "p/p per night",
 
-    stat1_v: "16",
+    stat1_v: "18",
     stat1_l: "Camping sites",
     stat2_v: "100%",
     stat2_l: "Solar powered",
@@ -495,15 +574,15 @@ window.TRANSLATIONS = {
     sites_title_1: "Choose the perfect",
     sites_title_2: "sanctuary for you",
     sites_lead:
-      "16 sites across four categories, all well separated from each other. Each one is named after a wave along the Chilean coast, from Arica to Chiloé.",
-    sites_cta: "See all 16 sites in detail",
+      "18 sites across five categories, all well separated from each other. Each one is named after a wave along the Chilean coast, from Arica to Chiloé.",
+    sites_cta: "See the 5 site categories",
 
-    svc_teaser_eyebrow: "Extras and services",
-    svc_teaser_title_1: "Everything you need,",
-    svc_teaser_title_2: "and then some",
+    svc_teaser_eyebrow: "Activities",
+    svc_teaser_title_1: "Make your stay",
+    svc_teaser_title_2: "something more",
     svc_teaser_lead:
-      "Bike rentals, surf lessons, kayaking on the Cáhuil lagoon, spa, transfers and a small shop on site for whatever you forgot to pack.",
-    svc_teaser_cta: "See all services",
+      "Explore by bike, learn to surf, kayak on the Cáhuil lagoon or discover the surroundings at your own pace.",
+    svc_teaser_cta: "See all activities",
 
     cat1_name: "Roofed with terrace",
     cat1_short: "Roofed + terrace",
@@ -519,12 +598,12 @@ window.TRANSLATIONS = {
     cat2_price: "$14.000",
     cat2_count: "3 sites",
 
-    cat3_name: "RVs and tents",
-    cat3_short: "Motorhome",
+    cat3_name: "Vehicle / motorhome access",
+    cat3_short: "Vehicle",
     cat3_desc:
       "Spacious sites with parking on the site itself and a power outlet, designed for RVs, campervans and large tents. Your vehicle right next to your tent.",
     cat3_price: "$10.000",
-    cat3_count: "4 sites",
+    cat3_count: "2 sites",
 
     cat4_name: "Non-roofed forest",
     cat4_short: "Forest",
@@ -532,6 +611,11 @@ window.TRANSLATIONS = {
       "Open sites among the trees, in direct contact with nature. For those who enjoy sleeping under the stars and waking up to birdsong.",
     cat4_price: "$10.000",
     cat4_count: "3 sites",
+    cat5_name: "Glamping",
+    cat5_short: "Glamping",
+    cat5_desc: "An equipped tent with a bed, bedding, small table, rug and solar lighting: extra comfort without losing contact with nature.",
+    cat5_price: "$30.000",
+    cat5_count: "4 sites",
 
     price_unit: "p/p per night",
     included: "Included",
@@ -549,18 +633,18 @@ window.TRANSLATIONS = {
     am_solar: "Solar energy",
     am_terrace: "Private terrace",
 
-    sitios_meta: "16 camping sites in Alto Punta de Lobos, Pichilemu. Roofed with terrace, roofed, for RVs and in the forest.",
+    sitios_meta: "18 camping sites in Alto Punta de Lobos, Pichilemu: roofed, with terraces, vehicle access, forest and glamping.",
     sitios_eyebrow: "Camping sites",
-    sitios_title_1: "16 sites,",
-    sitios_title_2: "16 Chilean waves",
+    sitios_title_1: "18 sites,",
+    sitios_title_2: "18 Chilean waves",
     sitios_lead:
-      "Each site is named after a good wave on the Chilean coast. They all include a grill and a picnic table, and are well separated from each other so you get your own space.",
+      "We keep the names of 18 Chilean waves to tell the story of the campsite. Book by category rather than by site number, so we can assign you the best available space.",
     sitios_note:
-      "Prices are per person, per night. Message us on WhatsApp with your dates, the number of people and the site you're interested in.",
+      "Prices are per person, per night. Message us on WhatsApp with your dates, number of guests and preferred category.",
     sitios_all: "All",
 
     plan_eyebrow: "Site map",
-    plan_title_1: "How the 16 sites",
+    plan_title_1: "How the 18 sites",
     plan_title_2: "are laid out",
     plan_lead: "Each site is well separated from the rest so you get your own space. Find the one you like best and get in touch to book it.",
     plan_caption: "General layout of Olas de Chile Ecocamp — Alto Punta de Lobos, Pichilemu.",
@@ -582,15 +666,20 @@ window.TRANSLATIONS = {
     s13_desc: "The closest to the native forest, very quiet at night.",
     s14_desc: "Open to the sky — the best one for stargazing.",
 
-    svc_meta: "Bike rentals, surf lessons, kayaking, stand up paddle, trekking, spa, transfers, shop and laundry at Olas de Chile Ecocamp.",
-    svc_eyebrow: "Extras and services",
+    svc_meta: "Bike rentals, surf lessons, kayaking, trekking, immaculate bathrooms, clubhouse, fire pit, hot tub, transfers, shop and laundry at Olas de Chile Ecocamp.",
+    activities_meta: "Kayaking, surf, trekking and cycling at Olas de Chile Ecocamp, Punta de Lobos, Pichilemu.",
+    activities_eyebrow: "Activities",
+    activities_title_1: "Experience the coast",
+    activities_title_2: "your way",
+    activities_lead: "Sea kayaking, surf with partner schools, trekking and cycling to discover the coastline.",
+    svc_eyebrow: "Services and extras",
     svc_title_1: "Turn your stay",
     svc_title_2: "into an experience",
     svc_lead:
-      "Beyond the site itself, we organise activities and services so you can make the most of your time in Pichilemu. Everything is booked in advance via WhatsApp.",
+      "Real comfort in the heart of nature: immaculate bathrooms, spaces to share and practical services for a relaxed stay.",
 
     svc_act_title: "Activities",
-    svc_extra_title: "Additional services",
+    svc_extra_title: "Camping services",
 
     svc1_name: "Bike rental",
     svc1_desc: "Bikes available along with route recommendations around the area, the coast and the hills. Book in advance.",
@@ -598,15 +687,22 @@ window.TRANSLATIONS = {
     svc2_desc: "Guided outings on the Cáhuil lagoon and the estuary, with options for every level.",
     svc3_name: "Surf",
     svc3_desc: "Equipment rental, group lessons and tutorials for beginners and advanced surfers, minutes from Punta de Lobos.",
-    svc4_name: "Stand Up Paddle",
-    svc4_desc: "Easy outings on the Cáhuil lagoon, ideal with family or at sunset.",
     svc5_name: "Trekking",
     svc5_desc: "Trails for every level, from short walks to routes through the coastal hills.",
+
+    svc_bath_name: "Bathrooms and showers",
+    svc_bath_desc: "Impeccable facilities, hot showers, a new outdoor shower, washbasins and a dishwashing area for a comfortable stay.",
+    svc_club_name: "Clubhouse",
+    svc_club_desc: "A welcoming space with films and projector, games, bar, table tennis and pool. Additional service by reservation.",
+    svc_firepit_name: "Fire pit",
+    svc_firepit_desc: "A gathering space after quiet hours at the sites. Additional service by reservation.",
+    svc_hot_name: "Hot tub",
+    svc_hot_desc: "Outdoor relaxation, coming soon as an additional service by reservation.",
 
     svc6_name: "Camp shop",
     svc6_desc: "Firewood bundles, toilet paper, camp-stove supplies, stove gas, air mattress patches, candles and lighters.",
     svc7_name: "Photography",
-    svc7_desc: "Photos and videos of your sports activities, so you take the session home with you.",
+    svc7_desc: "We photograph you on your wave: photos, video and drone footage of your sports activities to take the session home with you.",
     svc8_name: "Transfers",
     svc8_desc: "From the airport, the bus terminal or within Pichilemu. Arrange it in advance.",
     svc9_name: "Spa and wellness",
@@ -616,8 +712,36 @@ window.TRANSLATIONS = {
     svc11_name: "Laundry",
     svc11_desc: "Clothes washing service for longer stays or after a few days of camping.",
 
-    svc_cta_title: "Want to add an activity?",
-    svc_cta_text: "Message us and we'll put together a stay that fits your dates and what you want to do.",
+    svc_cta_title: "Want a tailor-made experience?",
+    svc_cta_text: "Message us and we'll create a tailor-made getaway for couples, groups, schools, universities or companies.",
+    svc_santuario_link: "Discover Santuario Expediciones",
+    partner_eyebrow: "Our own expedition agency",
+    partner_title: "Discover the coast with Santuario Expediciones",
+    partner_text: "Through Olas de Chile, we also create expedition, photography and nature experiences to discover Punta de Lobos and the landscapes of Chile’s coast.",
+    partner_link: "Discover Santuario Expediciones",
+
+    how_eyebrow: "Before you arrive",
+    how_meta: "Opening hours, camping etiquette, solar energy, bathrooms and a packing checklist for your stay at Olas de Chile Ecocamp.",
+    how_title_1: "How we",
+    how_title_2: "work",
+    how_lead: "Everything you need to prepare a comfortable stay that respects the environment.",
+    how_checkin_title: "Check-in and check-out",
+    how_checkin_text: "Check-in from 3:00 pm. Check-out by 12:00 pm.",
+    how_notice_label: "Important information",
+    how_notice_text: "Check-in from 3:00 pm · check-out by 12:00 pm",
+    how_comfort_title: "Comfort and energy",
+    how_comfort_text: "Hot water, solar electricity and common areas are available. Bring a headlamp, warm layers and your personal equipment.",
+    how_rules_title: "Sharing the space",
+    how_rules_text: "We respect quiet hours, sort waste and take care of the water, plants and wildlife around us.",
+    team_eyebrow: "Our team",
+    team_title: "The people behind the ecocamp",
+    team_pablo_name: "Pablo Rosés — Founder / Manager",
+    team_pablo_text: "A lover of nature, travel and photography. He also leads Santuario Expediciones and nature tourism and conservation projects.",
+    team_daniel_name: "Daniel Víriguez — Administrator",
+    team_daniel_text: "He manages the day-to-day operation and helps make every ecocamp visit warm, comfortable and well cared for.",
+    editorial_eyebrow: "Olas de Chile",
+    editorial_title: "A coastline that inspires us",
+    editorial_text: "The project takes its name from Chile's thousands of kilometres of coastline, its waves, intertidal ecosystems and biodiversity. It also reminds us of the importance of protecting biological corridors, the Breakers Law and the communities whose lives are connected to the sea.",
 
     about_meta: "The story, mission and environmental commitment behind Olas de Chile Ecocamp in Punta de Lobos, Pichilemu.",
     about_eyebrow: "About us",
@@ -668,7 +792,7 @@ window.TRANSLATIONS = {
     about_map_title_1: "The waves that",
     about_map_title_2: "name our sites",
     about_map_lead:
-      "Each of the 16 sites is named after a good Chilean wave. It's our way of keeping the rest of the coast present while you're here.",
+      "Each of the 18 sites is named after a good Chilean wave. It's our way of keeping the rest of the coast present while you're here.",
 
     dir_meta: "How to reach Olas de Chile Ecocamp in Alto Punta de Lobos, Pichilemu, and everything you need to know before you come.",
     dir_eyebrow: "How to get here",
@@ -746,6 +870,7 @@ window.TRANSLATIONS = {
 
     /* ---------- FAQ ---------- */
     faq_eyebrow: "Frequently asked questions",
+    faq_meta: "Frequently asked questions about bookings, sites, services, opening hours, bathrooms and camping etiquette at Olas de Chile Ecocamp.",
     faq_title_1: "Everything you",
     faq_title_2: "usually ask us",
     faq_lead:
@@ -775,6 +900,16 @@ window.TRANSLATIONS = {
     faq11_a: "Yes, there are several options to suit every taste. Just ask the camp staff.",
     faq12_q: "There are no sites left — what do I do?",
     faq12_a: "Message or call us on +569 5450 4499 and we'll see what we can do.",
+    faq13_q: "What time are check-in and check-out?",
+    faq13_a: "Check-in is from 3:00 pm and check-out is by 12:00 pm.",
+    faq14_q: "Can I book a specific site number?",
+    faq14_a: "No. Bookings are made by category —for example, roofed, forest, vehicle access or glamping— and the team assigns the best available site according to occupancy.",
+    faq15_q: "What does glamping include?",
+    faq15_a: "It includes an equipped tent, bed, bedding, a small table, rug and solar lighting. It offers extra comfort while keeping you connected to nature.",
+    faq16_q: "Do services and activities require a reservation?",
+    faq16_a: "Yes. The clubhouse, fire pit, hot tub, kayaking, surf, trekking, bikes and photography are arranged in advance via WhatsApp. The hot tub will be available soon.",
+    faq17_q: "What are the bathrooms and showers like?",
+    faq17_a: "The bathrooms are clean and comfortable, with hot showers. There is also a new outdoor shower, washbasins and a dishwashing area.",
 
     /* ---------- Packing checklist ---------- */
     pack_eyebrow: "Before you pack",
@@ -817,6 +952,7 @@ window.TRANSLATIONS = {
     pack5_5: "A bag to take your rubbish home",
 
     gallery_eyebrow: "Gallery",
+    gallery_meta: "Photo gallery of Olas de Chile Ecocamp, Punta de Lobos and Pichilemu.",
     gallery_title_1: "Live the",
     gallery_title_2: "experience",
     gallery_1: "Panoramic view of the ecocamp",

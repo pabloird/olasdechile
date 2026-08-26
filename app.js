@@ -100,9 +100,31 @@
   var NAV = [
     { href: "index.html", key: "nav_home", page: "home" },
     { href: "sitios.html", key: "nav_sites", page: "sites" },
-    { href: "servicios.html", key: "nav_services", page: "services" },
+    { key: "nav_experiences", children: [
+      { href: "servicios.html", key: "nav_services", page: "services" },
+      { href: "actividades.html", key: "nav_activities", page: "activities" }
+    ] },
     { href: "conocenos.html", key: "nav_about", page: "about" },
-    { href: "indicaciones.html", key: "nav_directions", page: "directions" }
+    { key: "nav_before", children: [
+      { href: "contacto.html", key: "nav_directions", page: "directions" },
+      { href: "funcionamos.html", key: "nav_how", page: "how" },
+      { href: "faq.html", key: "nav_faq", page: "faq" }
+    ] },
+    { href: "galeria.html", key: "nav_gallery", page: "gallery" },
+    { href: "contacto.html", key: "nav_contact", page: "contact" },
+  ];
+
+  var NAV_ALL = [
+    { href: "index.html", key: "nav_home", page: "home" },
+    { href: "sitios.html", key: "nav_sites", page: "sites" },
+    { href: "servicios.html", key: "nav_services", page: "services" },
+    { href: "actividades.html", key: "nav_activities", page: "activities" },
+    { href: "conocenos.html", key: "nav_about", page: "about" },
+    { href: "contacto.html", key: "nav_contact", page: "contact" },
+      { href: "contacto.html", key: "nav_directions", page: "directions" },
+    { href: "funcionamos.html", key: "nav_how", page: "how" },
+    { href: "faq.html", key: "nav_faq", page: "faq" },
+    { href: "galeria.html", key: "nav_gallery", page: "gallery" }
   ];
 
   function buildChrome() {
@@ -110,6 +132,15 @@
     var mobile = "";
     for (var i = 0; i < NAV.length; i++) {
       var a = NAV[i];
+      if (a.children) {
+        var groupActive = a.children.some(function (child) { return child.page === PAGE; });
+        var children = a.children.map(function (child) {
+          return '<a href="' + child.href + '" class="nav-dropdown-link' + (child.page === PAGE ? ' active' : '') + '"' + (child.page === PAGE ? ' aria-current="page"' : '') + ' data-i18n="' + child.key + '"></a>';
+        }).join("");
+        links += '<div class="nav-dropdown' + (groupActive ? ' active' : '') + '"><button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false" data-i18n="' + a.key + '"></button><div class="nav-dropdown-menu">' + children + '</div></div>';
+        mobile += '<div class="mobile-menu-group"><strong data-i18n="' + a.key + '"></strong>' + a.children.map(function (child) { return '<a href="' + child.href + '"' + (child.page === PAGE ? ' aria-current="page"' : '') + ' data-i18n="' + child.key + '"></a>'; }).join("") + '</div>';
+        continue;
+      }
       var active = a.page === PAGE ? " active" : "";
       var aria = a.page === PAGE ? ' aria-current="page"' : "";
       links += '<a href="' + a.href + '" class="nav-link' + active + '"' + aria + ' data-i18n="' + a.key + '"></a>';
@@ -137,8 +168,8 @@
       "</div>";
 
     var flinks = "";
-    for (var j = 0; j < NAV.length; j++) {
-      flinks += '<a href="' + NAV[j].href + '" data-i18n="' + NAV[j].key + '"></a>';
+    for (var j = 0; j < NAV_ALL.length; j++) {
+      flinks += '<a href="' + NAV_ALL[j].href + '" data-i18n="' + NAV_ALL[j].key + '"></a>';
     }
 
     document.getElementById("siteFooter").innerHTML =
@@ -157,7 +188,7 @@
             '<a class="footer-contact" href="tel:' + D.PHONE + '">' + ICONS.phone + "<span>" + D.PHONE_PRETTY + "</span></a>" +
             '<a class="footer-contact" href="' + D.WA + '" target="_blank" rel="noopener" data-wa="msg">' + ICONS.whatsapp + "<span>WhatsApp</span></a>" +
             '<a class="footer-contact" href="' + D.INSTAGRAM + '" target="_blank" rel="noopener">' + ICONS.instagram + "<span>@olasdechile</span></a>" +
-            '<a class="footer-contact" href="indicaciones.html">' + ICONS.pin + '<span data-i18n="contact_location"></span></a>' +
+            '<a class="footer-contact" href="contacto.html">' + ICONS.pin + '<span data-i18n="contact_location"></span></a>' +
           "</div>" +
         "</div>" +
         '<div class="wrap footer-bottom">' +
@@ -208,7 +239,7 @@
         '<div class="wrap page-hero-content">' +
           '<p class="eyebrow" data-i18n="' + key + '_eyebrow"></p>' +
           '<h1 class="title"><span data-i18n="' + key + '_title_1"></span> <em data-i18n="' + key + '_title_2"></em></h1>' +
-          '<p class="lead" data-i18n="' + key + '_lead"></p>' +
+          (key === "gallery" ? "" : '<p class="lead" data-i18n="' + key + '_lead"></p>') +
         "</div>" +
       "</section>"
     );
@@ -230,6 +261,34 @@
      ========================================================== */
   var BUILD = {};
 
+  function renderFaq(mountId) {
+    var mount = document.getElementById(mountId);
+    if (!mount) return;
+    var faq = "";
+    for (var f = 1; f <= D.FAQ; f++) {
+      var id = "faq-" + f;
+      faq += '<div class="faq-item"><button type="button" class="faq-q" aria-expanded="false" aria-controls="' + id + '"><span class="faq-n">' + (f < 10 ? "0" + f : f) + '</span><span data-i18n="faq' + f + '_q"></span><span class="faq-toggle">' + ICONS.plus + '</span></button><div class="faq-a" id="' + id + '" hidden><p data-i18n="faq' + f + '_a"></p></div></div>';
+    }
+    mount.innerHTML = faq;
+    mount.addEventListener("click", function (e) {
+      var btn = e.target.closest(".faq-q");
+      if (!btn) return;
+      var open = btn.getAttribute("aria-expanded") === "true";
+      var all = mount.querySelectorAll(".faq-q");
+      for (var i = 0; i < all.length; i++) { all[i].setAttribute("aria-expanded", "false"); document.getElementById(all[i].getAttribute("aria-controls")).hidden = true; }
+      if (!open) { btn.setAttribute("aria-expanded", "true"); document.getElementById(btn.getAttribute("aria-controls")).hidden = false; }
+    });
+  }
+
+  function renderGallery(mountId) {
+    var mount = document.getElementById(mountId);
+    if (!mount) return;
+    var srcs = [D.IMG.gal1, D.IMG.gal2, D.IMG.gal3, D.IMG.gal4, D.IMG.gal5, D.IMG.gal6, D.IMG.gal7, D.IMG.gal8];
+    var html = "";
+    for (var g = 0; g < srcs.length; g++) html += '<button type="button" class="gallery-item" data-full="' + srcs[g] + '"><img src="' + srcs[g] + '" alt="Fotografía de Olas de Chile Ecocamp" loading="lazy" /><span class="gallery-cap" data-i18n="gallery_' + (g + 1) + '"></span></button>';
+    mount.innerHTML = html;
+  }
+
   /* ---------- Accueil ---------- */
   BUILD.home = function () {
     var cats = "";
@@ -237,7 +296,7 @@
       var c = D.CATEGORIES[i];
       cats +=
         '<a class="cat-card reveal d' + (i + 1) + '" href="sitios.html#' + c.key + '">' +
-          '<div class="cat-media"><img src="' + c.img + '" alt="" loading="lazy" />' +
+          '<div class="cat-media">' + (c.img ? '<img src="' + c.img + '" alt="Sitio de camping en Olas de Chile Ecocamp" loading="lazy" />' : '<div class="media-placeholder" aria-hidden="true"></div>') +
             '<span class="cat-count" data-i18n="' + c.key + '_count"></span></div>' +
           '<div class="cat-body">' +
             '<h3 class="cat-name" data-i18n="' + c.key + '_name"></h3>' +
@@ -252,15 +311,7 @@
     }
     document.getElementById("catGrid").innerHTML = cats;
 
-    var gal = "";
-    var srcs = [D.IMG.gal1, D.IMG.gal2, D.IMG.gal3, D.IMG.gal4, D.IMG.gal5, D.IMG.gal6, D.IMG.gal7, D.IMG.gal8];
-    for (var g = 0; g < srcs.length; g++) {
-      gal +=
-        '<button type="button" class="gallery-item" data-full="' + srcs[g] + '">' +
-          '<img src="' + srcs[g] + '" alt="" loading="lazy" />' +
-          '<span class="gallery-cap" data-i18n="gallery_' + (g + 1) + '"></span></button>';
-    }
-    document.getElementById("galleryGrid").innerHTML = gal;
+    renderGallery("galleryGrid");
 
     var initials = ["N", "A", "N", "M"];
     var tst = "";
@@ -281,14 +332,17 @@
 
   /* ---------- Sitios ---------- */
   BUILD.sites = function () {
-    document.getElementById("pageHero").innerHTML = pageHero("sitios", D.IMG.cat1);
+    document.getElementById("pageHero").innerHTML = pageHero("sitios", "assets/hero/d23542_2219820e11534022b5ed7601af8082e1~mv2.webp");
 
     /* Filtres */
-    var filters = '<button type="button" class="chip active" data-filter="all" data-i18n="sitios_all"></button>';
+    var totalSites = 0;
+    for (var n = 0; n < D.CATEGORIES.length; n++) totalSites += D.CATEGORIES[n].sites.length;
+    var filters = '<button type="button" class="chip active" data-filter="all"><span data-i18n="sitios_all"></span><span class="chip-count">' + totalSites + '</span></button>';
     for (var f = 0; f < D.CATEGORIES.length; f++) {
       filters +=
-        '<button type="button" class="chip" data-filter="' + D.CATEGORIES[f].key + '" ' +
-        'data-i18n="' + D.CATEGORIES[f].key + '_short"></button>';
+        '<button type="button" class="chip" data-filter="' + D.CATEGORIES[f].key + '">' +
+        '<span data-i18n="' + D.CATEGORIES[f].key + '_short"></span>' +
+        '<span class="chip-count">' + D.CATEGORIES[f].sites.length + '</span></button>';
     }
     document.getElementById("siteFilters").innerHTML = filters;
 
@@ -306,14 +360,11 @@
               "<span><span class=\"site-name\">" + esc(s.name) + "</span>" +
               '<span class="site-cat" data-i18n="' + c.key + '_short"></span></span>' +
             "</div>" +
-            '<p class="site-desc" data-i18n="' + s.d + '"></p>' +
+            (s.d ? '<p class="site-desc" data-i18n="' + s.d + '"></p>' : '') +
             '<span class="site-region">' + esc(s.r) + "</span>" +
             '<div class="site-card-foot">' +
               '<p><span class="site-price" data-i18n="' + c.key + '_price"></span>' +
                 '<span class="unit" data-i18n="price_unit"></span></p>' +
-              '<a class="site-btn" target="_blank" rel="noopener" ' +
-                'data-wa="site" data-site="' + s.n + " · " + esc(s.name) + '" ' +
-                'href="' + D.WA + '" data-i18n="site_book"></a>' +
             "</div>" +
           "</article>";
       }
@@ -321,7 +372,7 @@
       html +=
         '<section class="cat-block reveal" id="' + c.key + '" data-cat="' + c.key + '">' +
           '<div class="cat-block-head">' +
-            '<figure class="cat-block-img"><img src="' + c.img + '" alt="" loading="lazy" /></figure>' +
+            '<figure class="cat-block-img">' + (c.img ? '<img src="' + c.img + '" alt="Sitio de camping en Olas de Chile Ecocamp" loading="lazy" />' : '<div class="media-placeholder" aria-hidden="true"></div>') + '</figure>' +
             '<div class="cat-block-info">' +
               '<p class="eyebrow" data-i18n="' + c.key + '_count"></p>' +
               '<h2 class="title" data-i18n="' + c.key + '_name"></h2>' +
@@ -357,7 +408,7 @@
 
   /* ---------- Servicios ---------- */
   BUILD.services = function () {
-    document.getElementById("pageHero").innerHTML = pageHero("svc", D.IMG.services);
+    document.getElementById("pageHero").innerHTML = pageHero("svc", "assets/hero/d23542_a4bf77a41c624091b0ec1464023bcf3d~mv2.webp");
 
     function cards(list, mountId) {
       var html = "";
@@ -373,11 +424,23 @@
               '<span data-i18n="site_book"></span>' + ICONS.arrow + "</a>" +
           "</article>";
       }
-      document.getElementById(mountId).innerHTML = html;
+      var mount = document.getElementById(mountId);
+      if (mount) mount.innerHTML = html;
     }
 
     cards(D.ACTIVITIES, "activitiesGrid");
     cards(D.EXTRAS, "extrasGrid");
+    document.getElementById("contactMount").innerHTML = contactSection();
+  };
+
+  BUILD.activities = function () {
+    document.getElementById("pageHero").innerHTML = pageHero("activities", D.IMG.services);
+    var html = "";
+    for (var i = 0; i < D.ACTIVITIES.length; i++) {
+      var it = D.ACTIVITIES[i];
+      html += '<article class="svc-card reveal d' + ((i % 4) + 1) + '"><span class="svc-icon">' + ICONS[it.icon] + '</span><h3 data-i18n="' + it.key + '_name"></h3><p data-i18n="' + it.key + '_desc"></p><a class="svc-link" target="_blank" rel="noopener" href="' + D.WA + '" data-wa="svc" data-svc="' + it.key + '"><span data-i18n="site_book"></span>' + ICONS.arrow + '</a></article>';
+    }
+    document.getElementById("activitiesGrid").innerHTML = html;
     document.getElementById("contactMount").innerHTML = contactSection();
   };
 
@@ -414,7 +477,7 @@
 
   /* ---------- Indicaciones ---------- */
   BUILD.directions = function () {
-    document.getElementById("pageHero").innerHTML = pageHero("dir", D.IMG.directions);
+    document.getElementById("pageHero").innerHTML = pageHero("dir", "assets/hero/d23542_77825d8eb5b24fd3898e02f0c9022f20~mv2.webp");
 
     var near = "";
     for (var i = 0; i < D.NEARBY.length; i++) {
@@ -427,6 +490,12 @@
         "</article>";
     }
     document.getElementById("nearGrid").innerHTML = near;
+
+    document.getElementById("contactMount").innerHTML = contactSection();
+  };
+
+  BUILD.how = function () {
+    document.getElementById("pageHero").innerHTML = pageHero("how", D.IMG.eco);
 
     var rules = "";
     for (var r = 0; r < D.RULES.length; r++) {
@@ -460,41 +529,23 @@
         "</article>";
     }
     document.getElementById("packGrid").innerHTML = pack;
+    document.getElementById("contactMount").innerHTML = contactSection();
+  };
 
-    /* FAQ — accordéon */
-    var faq = "";
-    for (var f = 1; f <= D.FAQ; f++) {
-      var id = "faq-" + f;
-      faq +=
-        '<div class="faq-item">' +
-          '<button type="button" class="faq-q" aria-expanded="false" aria-controls="' + id + '">' +
-            '<span class="faq-n">' + (f < 10 ? "0" + f : f) + "</span>" +
-            '<span data-i18n="faq' + f + '_q"></span>' +
-            '<span class="faq-toggle">' + ICONS.plus + "</span>" +
-          "</button>" +
-          '<div class="faq-a" id="' + id + '" hidden>' +
-            '<p data-i18n="faq' + f + '_a"></p>' +
-          "</div>" +
-        "</div>";
-    }
-    document.getElementById("faqList").innerHTML = faq;
+  BUILD.faq = function () {
+    document.getElementById("pageHero").innerHTML = pageHero("faq", "assets/hero/d23542_828299395bda419d9b27a839920a53c1~mv2.webp");
+    renderFaq("faqList");
+    document.getElementById("contactMount").innerHTML = contactSection();
+  };
 
-    document.getElementById("faqList").addEventListener("click", function (e) {
-      var btn = e.target.closest(".faq-q");
-      if (!btn) return;
-      var open = btn.getAttribute("aria-expanded") === "true";
-      /* Un seul panneau ouvert à la fois */
-      var all = this.querySelectorAll(".faq-q");
-      for (var i = 0; i < all.length; i++) {
-        all[i].setAttribute("aria-expanded", "false");
-        document.getElementById(all[i].getAttribute("aria-controls")).hidden = true;
-      }
-      if (!open) {
-        btn.setAttribute("aria-expanded", "true");
-        document.getElementById(btn.getAttribute("aria-controls")).hidden = false;
-      }
-    });
+  BUILD.gallery = function () {
+    document.getElementById("pageHero").innerHTML = pageHero("gallery", D.IMG.gal1);
+    renderGallery("galleryGrid");
+    document.getElementById("contactMount").innerHTML = contactSection();
+  };
 
+  BUILD.contact = function () {
+    document.getElementById("pageHero").innerHTML = pageHero("contact_page", "assets/hero/d23542_77825d8eb5b24fd3898e02f0c9022f20~mv2.webp");
     document.getElementById("contactMount").innerHTML = contactSection();
   };
 
@@ -565,6 +616,13 @@
       burger.classList.remove("open");
       burger.setAttribute("aria-expanded", "false");
     });
+    document.querySelectorAll(".nav-dropdown-toggle").forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        var dropdown = toggle.closest(".nav-dropdown");
+        var open = dropdown.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", String(open));
+      });
+    });
   }
 
   function initLangToggle() {
@@ -602,6 +660,14 @@
 
     var box = document.getElementById("lightbox");
     var img = document.getElementById("lightboxImg");
+    var items = [];
+    var current = 0;
+
+    function show(index) {
+      items = Array.prototype.slice.call(grid.querySelectorAll(".gallery-item"));
+      current = (index + items.length) % items.length;
+      img.src = items[current].getAttribute("data-full");
+    }
 
     function close() {
       box.hidden = true;
@@ -611,14 +677,19 @@
     grid.addEventListener("click", function (e) {
       var btn = e.target.closest(".gallery-item");
       if (!btn) return;
-      img.src = btn.getAttribute("data-full");
+      items = Array.prototype.slice.call(grid.querySelectorAll(".gallery-item"));
+      show(items.indexOf(btn));
       box.hidden = false;
       document.body.style.overflow = "hidden";
     });
     document.getElementById("lightboxClose").addEventListener("click", close);
+    document.getElementById("lightboxPrev").addEventListener("click", function () { show(current - 1); });
+    document.getElementById("lightboxNext").addEventListener("click", function () { show(current + 1); });
     box.addEventListener("click", function (e) { if (e.target === box) close(); });
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && !box.hidden) close();
+      if (e.key === "ArrowLeft" && !box.hidden) show(current - 1);
+      if (e.key === "ArrowRight" && !box.hidden) show(current + 1);
     });
   }
 

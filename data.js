@@ -7,14 +7,14 @@ window.ODC_DATA = (function () {
 
   var IMG = {
     hero: W + "d23542_9499eee315484ff78a5f3e06c20b9eb6~mv2.jpg/v1/fill/w_1800,h_1200,al_c,q_85,enc_avif,quality_auto/hero.jpg",
-    intro: W + "d23542_e9f635844db84be79685ba75f5399fa1~mv2.jpg" + Q + "intro.jpg",
+    intro: "assets/hero/d23542_31ed67444e5f4d5cab55cbf48c7d71ae~mv2.webp",
     eco: W + "d23542_fbe581ed32e946c7953bcb17f87e5f0c~mv2.jpg" + Q + "solar.jpg",
     cat1: W + "d23542_13924b1fe4584154a0083b174dc730b7~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/cat1.jpg",
     cat2: W + "d23542_db5b912bc67b452d8147d3f8271a5933~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/cat2.jpg",
     cat3: W + "d23542_77f8a3accae84ad1a5074af1f1843912~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/cat3.jpg",
     cat4: W + "d23542_722ac0cb5e084bff9682a042b9bdfb15~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,enc_avif,quality_auto/cat4.jpg",
     services: W + "d23542_1a00ef08d80a49a9bb4d3262735b4678~mv2.jpg" + Q + "surf.jpg",
-    about: W + "d23542_eae392bc3f1746c4b5cece744ef53f67~mv2.png/v1/fill/w_1200,h_800,al_c,q_85,enc_avif,quality_auto/about.jpg",
+    about: "assets/hero/d23542_828299395bda419d9b27a839920a53c1~mv2.webp",
     directions: W + "d23542_103ce58b44604495b4a7c913645d5d52~mv2.jpg" + Q + "directions.jpg",
     gal1: W + "d23542_9499eee315484ff78a5f3e06c20b9eb6~mv2.jpg/v1/fill/w_1400,h_1000,al_c,q_85,enc_avif,quality_auto/gal1.jpg",
     gal2: W + "d23542_9855a40635fa4be48c6cbeaa6e6af9bc~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/gal2.jpg",
@@ -28,22 +28,15 @@ window.ODC_DATA = (function () {
     chile_map: W + "d23542_2e6be141a3b3400ba505d7bfe017b4f5~mv2.jpg/v1/fill/w_700,h_1400,al_c,q_85,enc_avif,quality_auto/chile.jpg"
   };
 
-  /* Photos du slideshow hero — 15 photos originales téléchargées du site */
+  /* Photos du slideshow hero — sélection actuelle */
   var HERO_SLIDES = [
     "d23542_a4bf77a41c624091b0ec1464023bcf3d~mv2.webp",
-    "d23542_6cbe5f8941f247ee82b145da223c275a~mv2.webp",
+    "d23542_2219820e11534022b5ed7601af8082e1~mv2.webp",
     "d23542_cc9edef1d1fd43e6a5eea4387f173c78~mv2.webp",
     "d23542_d950e78df3914c8cb99d1d65cf035efa~mv2.webp",
-    "d23542_eac0b7dabfeb48a1b26a899cc08aca70~mv2.webp",
-    "d23542_59277060e6534b84a99c92d614b834da~mv2.webp",
-    "d23542_a9cb0d3cc8a54128a0e354c2f6110514~mv2.webp",
-    "d23542_4c0cc4c1683749438598171007ca0dd3~mv2.webp",
-    "d23542_2219820e11534022b5ed7601af8082e1~mv2.webp",
     "d23542_f0876f6bbf52401f887ea7d32f247e90~mv2.webp",
     "d23542_cdd7a62a2db24a8e9ac53637c569d756~mv2.webp",
     "d23542_5d0a7a1a1c484b40b9f7c728b84fa868~mv2.webp",
-    "d23542_31ed67444e5f4d5cab55cbf48c7d71ae~mv2.webp",
-    "d23542_77825d8eb5b24fd3898e02f0c9022f20~mv2.webp",
     "d23542_828299395bda419d9b27a839920a53c1~mv2.webp"
   ];
 
@@ -81,9 +74,7 @@ window.ODC_DATA = (function () {
       out: ["bulb", "hammock", "septic"],
       sites: [
         { n: 8, name: "Pullay", d: "s8_desc", r: "Ñuble, XVI Región" },
-        { n: 9, name: "El Faro", d: "s9_desc", r: "Chiloé, X Región" },
-        { n: 10, name: "Mehuín", d: "s10_desc", r: "Valdivia, XIV Región" },
-        { n: 11, name: "Carelmapu", d: "s11_desc", r: "De los Lagos, X Región" }
+        { n: 9, name: "El Faro", d: "s9_desc", r: "Chiloé, X Región" }
       ]
     },
     {
@@ -96,6 +87,18 @@ window.ODC_DATA = (function () {
         { n: 13, name: "La Puntilla", d: "s13_desc", r: "O'Higgins, VI Región" },
         { n: 14, name: "Tumán", d: "s14_desc", r: "O'Higgins, VI Región" }
       ]
+    },
+    {
+      key: "cat5",
+      img: "",
+      in: ["grill", "table", "hammock"],
+      out: ["plug", "bulb", "parking"],
+      sites: [
+        { n: 10, name: "Mehuín", d: "s10_desc", r: "Valdivia, XIV Región" },
+        { n: 11, name: "Carelmapu", d: "s11_desc", r: "De los Lagos, X Región" },
+        { n: 17, name: "Matanza", d: "", r: "O'Higgins, VI Región" },
+        { n: 18, name: "Pichilemu", d: "", r: "O'Higgins, VI Región" }
+      ]
     }
   ];
 
@@ -103,15 +106,17 @@ window.ODC_DATA = (function () {
     { key: "svc1", icon: "bike" },
     { key: "svc2", icon: "kayak" },
     { key: "svc3", icon: "surf" },
-    { key: "svc4", icon: "sup" },
     { key: "svc5", icon: "trek" }
   ];
 
   var EXTRAS = [
+    { key: "svc_bath", icon: "water" },
+    { key: "svc_club", icon: "users" },
+    { key: "svc_firepit", icon: "fire" },
+    { key: "svc_hot", icon: "spa" },
     { key: "svc6", icon: "shop" },
     { key: "svc7", icon: "camera" },
     { key: "svc8", icon: "van" },
-    { key: "svc9", icon: "spa" },
     { key: "svc10", icon: "event" },
     { key: "svc11", icon: "laundry" }
   ];
@@ -137,7 +142,7 @@ window.ODC_DATA = (function () {
   ];
 
   /* 12 questions fréquentes (indicaciones.html) */
-  var FAQ = 12;
+  var FAQ = 17;
 
   /* Checklist bagages */
   var PACKING = [
